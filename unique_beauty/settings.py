@@ -27,7 +27,7 @@ SECRET_KEY = 'django-insecure-zd@!aj)y$_$^%8leo+u9-)c$%_eq1#72z58o!(b4bdsz+vey)q
 DEBUG = True
 
 ALLOWED_HOSTS = ['8000-saleha-m14-unique-beauty-ps6qmq3mgv.us2.codeanyapp.com']
-
+CSRF_TRUSTED_ORIGINS = ['https://8000-saleha-m14-unique-beauty-ps6qmq3mgv.us2.codeanyapp.com']
 
 # Application definition
 
@@ -83,9 +83,20 @@ AUTHENTICATION_BACKENDS = [
 
 SITE_ID = 1
 
+
+# log emails in the console
+EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
+
+ACCOUNT_AUTHENTICATION_METHOD = 'username_email'
+ACCOUNT_EMAIL_REQUIRED = True
+ACCOUNT_EMAIL_VERIFICATION = 'mandatory'
+ACCOUNT_SIGNUP_EMAIL_ENTER_TWICE = True
+ACCOUNT_USERNAME_MIN_LENGTH = 4
+LOGIN_URL = '/accounts/login/'
+LOGIN_REDIRECT_URL = '/success'
+
+
 WSGI_APPLICATION = 'unique_beauty.wsgi.application'
-
-
 # Database
 # https://docs.djangoproject.com/en/4.2/ref/settings/#databases
 
