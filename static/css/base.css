@@ -1,0 +1,15 @@
+html {
+    height: 100%;
+}
+body {
+    background: blue;
+    font-family: serif;
+}
+
+.searchbar {
+    display: inline-flex;
+    align-items: center;
+    color: #47477e;
+    border-radius: 4px;
+    border: 1px solid black;
+}
