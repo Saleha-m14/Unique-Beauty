@@ -30,6 +30,7 @@ body {
 }
 .short-text {
     color: #4c6592;
+    font-family: 'Playfair Display', serif;
 }
 .searchbar {
     display: inline-flex;
@@ -87,7 +88,26 @@ body {
     background-color: #f3edf2;
     text-decoration: none;
 }
-
+.overlay {
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    background: white;
+}
+img {
+    height: 300px;
+}
+.flex-container {
+    display: flex;
+    gap: 20px;
+}
+.flex-item {
+    background-color: lightblue;
+    padding: 10px;
+}
 /* -------------------------------- Media Queries */
 
 /* Slightly larger container on xl screens */
