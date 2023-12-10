@@ -1,0 +1,101 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block page_header %}
+<div class="container header-container">
+    <div class="row">
+        <div class="col">
+            <h2 class="text-center text-uppercase text-black"></h2>
+            <hr class="text-black">
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+{% block content %}
+<div class="overlay"></div>
+
+<div class="container-fluid">
+    <div id="product" >
+        <div class="row">
+            <div class="col text-center mt-3">
+                <h2 class="logo-font">{{ product.name }}</h2>
+                <hr class="w-50 mb-1">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12 col-md-6 col-lg-4 offset-lg-2">
+                <div class="img-container my-5">
+                    {% if product.image %}
+                        <a href="{{ prodcut.image.url }}" target="_blank">
+                            <img class="card-img-top w-100 custom-bg" src="{{ product.image.url }}" alt="{{ product.name }}">
+                        </a>
+                    {% else %}
+                        <a href="">
+                            <img class="card-img-top w-100 custom-bg" src="{{ MEDIA_URL }}noimage.png" alt="{{ product.name }}">
+                        </a>
+                    {% endif %}
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4 offset-lg-2">
+                <div class="product-details-container my-5">
+                    <p>{{ product.name }}</p>
+                    <h4 class="custom-highlight">{{ product.price }}</h4>
+                    {% if product.rating %}
+                        <small class="text-muted"><i class="fas fa-star mr-1"></i>{{ product.rating }}</small>
+                    {% else %}
+                        <small class="text-muted">No rating</small>
+                    {% endif %}
+                    <p>{{ product.description }}</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+<!--
+<div class="container-fluid">
+    <div class="row">
+        <div class="product-container col-10 offset-1">
+            <div class="row mt-1 mb-2"></div>
+            <div class="row">
+                <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3">
+                    <div class="card h-100 border-0">
+                        <img src="../../../media/pexels-kristina-paukshtite-3060257.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Lip Stick</h5>
+                            <p class="card-text">Look shinny</p>
+                            <p>26.99$</p>
+                        </div>
+                    </div>
+                    <div class="card h-100 border-0">
+                        <img src="../../../media/pexels-kristina-paukshtite-3060257.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Lip Stick</h5>
+                            <p class="card-text">Look shinny</p>
+                            <p>26.99$</p>
+                        </div>
+                    </div>
+                    <div class="card h-100 border-0">
+                        <img src="../../../media/pexels-kristina-paukshtite-3060257.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Lip Stick</h5>
+                            <p class="card-text">Look shinny</p>
+                            <p>26.99$</p>
+                        </div>
+                    </div>
+                    <div class="card h-100 border-0">
+                        <img src="../../../media/pexels-kristina-paukshtite-3060257.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Lip Stick</h5>
+                            <p class="card-text">Look shinny</p>
+                            <p>26.99$</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>   
+</div>
+-->
+{% endblock %}

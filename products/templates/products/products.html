@@ -17,83 +17,52 @@
 
 <div class="container">
     <div id="products" >
-        <div class="row row-cols-1 row-cols-md-3 row-cols-lg-4 g-4">
+        <div class="row">
+            <div class="col text-center mt-3">
+                <h2 class="logo-font">Unique Beauty Products</h2>
+                <hr class="w-50 mb-1">
+            </div>
+        </div>
+        <div class="row row-cols-1 row-cols-md-3 row-cols-lg-4 g-4 mt-5">
+            {% for product in products %}
             <div class="col mb-5">
                 <div class="card h-100 shadow custom-card">
-                    <img class="card-img-top w-100 custom-bg" src="../../../media/pexels-kristina-paukshtite-3060257.jpg" alt="">
+                    {% if product.image %}
+                    <a href="{{ url 'product_detail.html' }}">
+                        <img class="card-img-top w-100 custom-bg" src="{{ product.image.url }}" alt="{{ product.name }}">
+                    </a>
+                    {% else %}
+                    <a href="{{ url 'product_detail.html' }}">
+                        <img class="card-img-top w-100 custom-bg" src="{{ MEDIA_URL }}noimage.png" alt="{{ product.name }}">
+                    </a>
+                    {% endif %}
+            
                     <div class="card-body">
-                        <h4 class="card-title">Lispstick </h4>
-                        <p class="card-text">The best product that you can ever find.</p>
-                    </div>
-                    <div class="card-footer custom-footer">
-                        <div class="float-start">
-                            <h4 class="custom-highlight">24.99$</h4>
-                        </div>
-                        <div class="float-end">
-                            <button class="btn btn-primary rounded-3 custom-btn">
-                                <i class="fas fa-shopping-card">Buy Now</i>
-                            </button>
+                        <h4 class="card-title">{{ product.name }}</h4>
+                        <!--<p class="card-text">{{ product.description }}</p>
+                                    </div>-->
+                        <div class="card-footer custom-footer">
+                            <div class="float-start">
+                                <h4 class="custom-highlight">{{ product.price }}</h4>
+                                {% if product.rating %}
+                                <small class="text-muted"><i class="fas fa-star mr-1"></i>{{ product.rating }}</small>
+                                {% else %}
+                                <small class="text-muted">No rating</small>
+                                {% endif %}
+                            </div>
+                            <div class="float-end">
+                                <button class="btn btn-primary rounded-3 custom-btn">
+                                    <i class="fas fa-shopping-card">Buy Now</i>
+                                </button>
+                                <a href="{{ prodcut.image.url }}" target="_blank" class="btn btn-info rounded-3 custom-btn">
+                                    <i class="fas fa-shopping-card">View</i>
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="col mb-5">
-                <div class="card h-100 shadow custom-card">
-                    <img class="card-img-top w-100 custom-bg" src="../../../media/pexels-kristina-paukshtite-3060257.jpg" alt="">
-                    <div class="card-body">
-                        <h4 class="card-title">Lispstick </h4>
-                        <p class="card-text">The best product that you can ever find.</p>
-                    </div>
-                    <div class="card-footer custom-footer">
-                        <div class="float-start">
-                            <h4 class="custom-highlight">24.99$</h4>
-                        </div>
-                        <div class="float-end">
-                            <button class="btn btn-primary rounded-3 custom-btn">
-                                <i class="fas fa-shopping-card">Buy Now</i>
-                            </button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col mb-5">
-                <div class="card h-100 shadow custom-card">
-                    <img class="card-img-top w-100 custom-bg" src="../../../media/pexels-kristina-paukshtite-3060257.jpg" alt="">
-                    <div class="card-body">
-                        <h4 class="card-title">Lispstick </h4>
-                        <p class="card-text">The best product that you can ever find.</p>
-                    </div>
-                    <div class="card-footer custom-footer">
-                        <div class="float-start">
-                            <h4 class="custom-highlight">24.99$</h4>
-                        </div>
-                        <div class="float-end">
-                            <button class="btn btn-primary rounded-3 custom-btn">
-                                <i class="fas fa-shopping-card">Buy Now</i>
-                            </button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col mb-5">
-                <div class="card h-100 shadow custom-card">
-                    <img class="card-img-top w-100 custom-bg" src="../../../media/pexels-kristina-paukshtite-3060257.jpg" alt="">
-                    <div class="card-body">
-                        <h4 class="card-title">Lispstick </h4>
-                        <p class="card-text">The best product that you can ever find.</p>
-                    </div>
-                    <div class="card-footer custom-footer">
-                        <div class="float-start">
-                            <h4 class="custom-highlight">24.99$</h4>
-                        </div>
-                        <div class="float-end">
-                            <button class="btn btn-primary rounded-3 custom-btn">
-                                <i class="fas fa-shopping-card">Buy Now</i>
-                            </button>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            {% endfor %}
         </div>
     </div>
 </div>
