@@ -5,7 +5,7 @@
 <div class="container header-container">
     <div class="row">
         <div class="col">
-            <h2 class="text-center text-uppercase text-black">All Products</h2>
+            <h2 class="text-center text-uppercase text-black"></h2>
             <hr class="text-black">
         </div>
     </div>
@@ -14,40 +14,90 @@
 
 {% block content %}
 <div class="overlay"></div>
-<!--<div id="my-products" class="d-flex justify-content-between align-items-center flex-lg-row my-5 flex-column"></div>
-    <div class="card" style="width: 18rem;">
-        <img src="../../../media/pexels-kristina-paukshtite-3060257.jpg" class="card-img-top" alt="...">
-        <div class="card-body">
-            <h5 class="card-title">Lip Stick</h5>
-            <p class="card-text">Look shinny</p>
-            <p>26.99$</p>
+
+<div class="container">
+    <div id="products" >
+        <div class="row row-cols-1 row-cols-md-3 row-cols-lg-4 g-4">
+            <div class="col mb-5">
+                <div class="card h-100 shadow custom-card">
+                    <img class="card-img-top w-100 custom-bg" src="../../../media/pexels-kristina-paukshtite-3060257.jpg" alt="">
+                    <div class="card-body">
+                        <h4 class="card-title">Lispstick </h4>
+                        <p class="card-text">The best product that you can ever find.</p>
+                    </div>
+                    <div class="card-footer custom-footer">
+                        <div class="float-start">
+                            <h4 class="custom-highlight">24.99$</h4>
+                        </div>
+                        <div class="float-end">
+                            <button class="btn btn-primary rounded-3 custom-btn">
+                                <i class="fas fa-shopping-card">Buy Now</i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col mb-5">
+                <div class="card h-100 shadow custom-card">
+                    <img class="card-img-top w-100 custom-bg" src="../../../media/pexels-kristina-paukshtite-3060257.jpg" alt="">
+                    <div class="card-body">
+                        <h4 class="card-title">Lispstick </h4>
+                        <p class="card-text">The best product that you can ever find.</p>
+                    </div>
+                    <div class="card-footer custom-footer">
+                        <div class="float-start">
+                            <h4 class="custom-highlight">24.99$</h4>
+                        </div>
+                        <div class="float-end">
+                            <button class="btn btn-primary rounded-3 custom-btn">
+                                <i class="fas fa-shopping-card">Buy Now</i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col mb-5">
+                <div class="card h-100 shadow custom-card">
+                    <img class="card-img-top w-100 custom-bg" src="../../../media/pexels-kristina-paukshtite-3060257.jpg" alt="">
+                    <div class="card-body">
+                        <h4 class="card-title">Lispstick </h4>
+                        <p class="card-text">The best product that you can ever find.</p>
+                    </div>
+                    <div class="card-footer custom-footer">
+                        <div class="float-start">
+                            <h4 class="custom-highlight">24.99$</h4>
+                        </div>
+                        <div class="float-end">
+                            <button class="btn btn-primary rounded-3 custom-btn">
+                                <i class="fas fa-shopping-card">Buy Now</i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col mb-5">
+                <div class="card h-100 shadow custom-card">
+                    <img class="card-img-top w-100 custom-bg" src="../../../media/pexels-kristina-paukshtite-3060257.jpg" alt="">
+                    <div class="card-body">
+                        <h4 class="card-title">Lispstick </h4>
+                        <p class="card-text">The best product that you can ever find.</p>
+                    </div>
+                    <div class="card-footer custom-footer">
+                        <div class="float-start">
+                            <h4 class="custom-highlight">24.99$</h4>
+                        </div>
+                        <div class="float-end">
+                            <button class="btn btn-primary rounded-3 custom-btn">
+                                <i class="fas fa-shopping-card">Buy Now</i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
-    <div class="card" style="width: 18rem;">
-        <img src="../../../media/pexels-kristina-paukshtite-3060257.jpg" class="card-img-top" alt="...">
-        <div class="card-body">
-            <h5 class="card-title">Lip Stick</h5>
-            <p class="card-text">Look shinny</p>
-            <p>26.99$</p>
-        </div>
-    </div>
-    <div class="card m-2" style="width: 18rem;">
-        <img src="../../../media/pexels-kristina-paukshtite-3060257.jpg" class="card-img-top" alt="...">
-        <div class="card-body">
-            <h5 class="card-title">Lip Stick</h5>
-            <p class="card-text">Look shinny</p>
-            <p>26.99$</p>
-        </div>
-    </div>
-    <div class="card m-2" style="width: 18rem;">
-        <img src="../../../media/pexels-kristina-paukshtite-3060257.jpg" class="card-img-top" alt="...">
-        <div class="card-body">
-            <h5 class="card-title">Lip Stick</h5>
-            <p class="card-text">Look shinny</p>
-            <p>26.99$</p>
-        </div>
-    </div>
-</div>-->
+</div>
+<!--
 <div class="container-fluid">
     <div class="row">
         <div class="product-container col-10 offset-1">
@@ -91,5 +141,5 @@
         </div>
     </div>   
 </div>
-
+-->
 {% endblock %}

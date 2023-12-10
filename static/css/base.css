@@ -100,13 +100,35 @@ body {
 img {
     height: 300px;
 }
-.flex-container {
-    display: flex;
-    gap: 20px;
+.custom-btn {
+    font-family: Arial, sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    color: #fff;
+    background-color: #a23148;
+    border: none;
+    border-radius: 5px;
+    padding: 12px 12px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    
 }
-.flex-item {
-    background-color: lightblue;
-    padding: 10px;
+.custom-btn:hover,
+.custom-btn:active,
+.custom-btn:focus {
+            background-color: #f3edf2;
+            text-decoration: none;
+}
+.custom-footer {
+    background-color: transparent;
+    border: none;
+}
+.custom-bg {
+    height: 300px;
+    background: #f1f1f1;
+}
+.custom-btn {
+    margin-right: 10px;
 }
 /* -------------------------------- Media Queries */
 
