@@ -1,0 +1,39 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block page_header %}
+<div class="container header-container">
+    <div class="row">
+        <div class="col"></div>
+    </div>
+</div>
+{% endblock %}
+
+{% block content %}
+<div class="overlay"></div>
+<div class="container">
+    <div id="shopping-bag">
+        <div class="row">
+            <div class="col text-center mt-3">
+                <h2 class="logo-font">Shopping Bag Items</h2>
+                <hr class="w-50 mb-1">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                {% if shopping_bag_items %}
+                    <div class="shopping-bag-items"></div>
+                {% else %}
+                    <div class="empty-bag-container">
+                        <h4 class="text-uppercase fw-bold font-weight-bold">Your Shopping Bag is empty :( </h4>
+                        <p class="mb-4">It is time to shop add items to your shopping bag to purchase.</p>
+                        <h4>
+                            <a href="{% url 'products' %}" class="shop-now-button button rounded text-uppercase py-3 mt-2">Go Shopping</a>
+                        </h4>
+                    </div>
+                {% endif %}
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

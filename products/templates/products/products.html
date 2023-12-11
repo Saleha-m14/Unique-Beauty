@@ -28,11 +28,13 @@
             <div class="col mb-5">
                 <div class="card h-100 shadow custom-card">
                     {% if product.image %}
-                    <a href="{{ url 'product_detail.html' }}">
+                    <a href="{% url 'product_detail' product.id %}">
+
                         <img class="card-img-top w-100 custom-bg" src="{{ product.image.url }}" alt="{{ product.name }}">
                     </a>
                     {% else %}
-                    <a href="{{ url 'product_detail.html' }}">
+                    <a href="{% url 'product_detail' product.id %}">
+
                         <img class="card-img-top w-100 custom-bg" src="{{ MEDIA_URL }}noimage.png" alt="{{ product.name }}">
                     </a>
                     {% endif %}
@@ -43,7 +45,7 @@
                                     </div>-->
                         <div class="card-footer custom-footer">
                             <div class="float-start">
-                                <h4 class="custom-highlight">{{ product.price }}</h4>
+                                <h4 class="custom-highlight">{{ product.price }}$</h4>
                                 {% if product.rating %}
                                 <small class="text-muted"><i class="fas fa-star mr-1"></i>{{ product.rating }}</small>
                                 {% else %}

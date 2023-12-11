@@ -130,6 +130,19 @@ img {
 .custom-btn {
     margin-right: 10px;
 }
+/* shopping bag */
+.empty-bag-container {
+    margin: 30px 0 20px;
+    background-color: rgb(247, 238, 226)
+}
+.font-weight-bold {
+    font-weight: 700;
+}
+.empty-bag-container {
+    padding: 20px;
+    text-align: center;
+    
+}
 /* -------------------------------- Media Queries */
 
 /* Slightly larger container on xl screens */
