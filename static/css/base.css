@@ -130,6 +130,12 @@ img {
 .custom-btn {
     margin-right: 10px;
 }
+/* delivery-banner */
+#delivery-banner {
+    background: #a23148;
+    color: white;
+    font-weight: 400;
+}
 /* shopping bag */
 .empty-bag-container {
     margin: 30px 0 20px;
