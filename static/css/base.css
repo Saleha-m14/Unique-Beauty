@@ -149,6 +149,9 @@ img {
     text-align: center;
     
 }
+.unique-logo {
+    background: url(/media/looka-unique.png)fixed center center no-repeat;
+}
 /* -------------------------------- Media Queries */
 
 /* Slightly larger container on xl screens */
