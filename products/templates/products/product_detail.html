@@ -39,7 +39,7 @@
             </div>
             <div class="col-12 col-md-6 col-lg-4 offset-lg-0">
                 <div class="product-details-container my-5">
-                    <h4 class="card-title">{{ product.name }}</h4>
+                    <h4 class="card-title text-uppercase">{{ product.name }}</h4>
                     <h4 class="custom-highlight">{{ product.price }}$</h4>
                     {% if product.rating %}
                         <small class="text-muted"><i class="fas fa-star mr-1"></i>{{ product.rating }}</small>
@@ -47,27 +47,27 @@
                         <small class="text-muted">No rating</small>
                     {% endif %}
                     <p>{{ product.description }}</p>
-                    <form class="form" method="POST" action="">
+                    <form class="form" method="POST" action="{% url 'add_to_shopping_bag' product.id %}">
                         {% csrf_token %}
                         <div class="form-row">
                             <div class="col-12">
                                 <p class="mt-3"><strong>Quantity:</strong></p>
                                 <div class="form-group w-50">
                                     <div class="input-group">
-                                        <input type="number" class="form-control qty_input" name="quantity" value="i" min="1" max="99" data-item_id="{{ product.id }}">
+                                        <input type="number" class="form-control qty_input" name="quantity" value="1" min="1" max="99" data-item_id="{{ product.id }}">
                                     </div>
                                 </div>
                             </div>
                             <div class="col-12">
-                                <a href="{% url 'products' %}" class="shop-now-button button rounded text-uppercase mt-5">
+                                <a href="{% url 'products' %}" class="btn btn-light rounded text-uppercase mt-3 border border-danger">
                                     <span class="icon">
                                         <i class="fas fa-chevron-left"></i>
                                     </span>
                                     <span class="text-uppercase">Keep Shopping</span>
                                 </a>
-                                <input type="submit" class="rounded text-uppercase shop-now-button button mt-5" value="Add to Bag">
+                                <input type="submit" class="rounded text-uppercase btn btn-light mt-3 border border-danger" value="Add to Bag">
                             </div>
-                            <input type="hidden" name="redirect_url" value="{{ request.push }}">
+                            <input type="hidden" name="redirect_url" value="{{ request.path }}">
                         </div>
                     </form>
                 </div>
