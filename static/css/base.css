@@ -81,6 +81,19 @@ body {
     transition: background-color 0.3s ease;
     min-width: 300px;
 }
+.shopping-btn {
+    font-family: Arial, sans-serif;
+    font-size: 12px;
+    font-weight: bold;
+    color: #fff;
+    background-color: #316da2;
+    border: none;
+    border-radius: 5px;
+    padding: 12px 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    min-width: 200px;
+}
 
 .button:hover,
 .button:active,
@@ -88,6 +101,13 @@ body {
     background-color: #f3edf2;
     text-decoration: none;
 }
+.shopping-btn:hover,
+.shopping-btn:active,
+.shopping-btn:focus {
+    background-color: #f3edf2;
+    text-decoration: none;
+}
+
 .overlay {
     position: fixed;
     height: 100%;
@@ -100,25 +120,7 @@ body {
 img {
     height: 300px;
 }
-.custom-btn {
-    font-family: Arial, sans-serif;
-    font-size: 18px;
-    font-weight: bold;
-    color: #fff;
-    background-color: #a23148;
-    border: none;
-    border-radius: 5px;
-    padding: 12px 12px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-    
-}
-.custom-btn:hover,
-.custom-btn:active,
-.custom-btn:focus {
-            background-color: #f3edf2;
-            text-decoration: none;
-}
+
 .custom-footer {
     background-color: transparent;
     border: none;
