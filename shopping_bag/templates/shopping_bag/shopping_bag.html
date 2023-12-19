@@ -22,7 +22,9 @@
         <div class="row">
             <div class="col">
                 {% if shopping_bag_items %}
-                    <div class="shopping-bag-items"></div>
+                    <div class="shopping-bag-items">
+                        {{ shopping_bag_items }}
+                    </div>
                 {% else %}
                     <div class="empty-bag-container">
                         <h4 class="text-uppercase fw-bold font-weight-bold">Your Shopping Bag is empty :( </h4>
@@ -30,6 +32,7 @@
                         <h4>
                             <a href="{% url 'products' %}" class="shop-now-button shopping-btn rounded text-uppercase py-3 mt-2">Go Shopping</a>
                         </h4>
+                        
                     </div>
                 {% endif %}
             </div>
