@@ -158,6 +158,9 @@ img {
 .unique-logo {
     background: url(/media/looka-unique.png)fixed center center no-repeat;
 }
+.unique-border {
+    border: #a23148 1px solid;
+}
 /* -------------------------------- Media Queries */
 
 /* Slightly larger container on xl screens */

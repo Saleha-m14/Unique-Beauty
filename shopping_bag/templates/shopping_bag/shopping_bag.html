@@ -46,8 +46,34 @@
                                         <td class="py-3">
                                             <p class="my-0">${{ item.product.price }}</p>
                                         </td>
-                                        <td class="py-3">
-                                            <p class="my-0">{{ item.quantity }}</p>
+                                        <td class="py-3 w-25">
+                                            <form action="" class="form update-form" method="POST">
+                                                {% csrf_token %}
+                                                <div class="form-group">
+                                                    <div class="input-group border border-dark">
+                                                        <div class="input-group-prepend">
+                                                            <button class="btn-sm decrement-qty btn btn-dark rounded-0" data-item_id="{{ item.item_id }}"
+                                                                id="decrement-qty_{{ item.item_id }}">
+                                                                <span>
+                                                                    <i class="fa-sm fas fa-minus"></i>
+                                                                </span>
+                                                            </button>
+                                                        </div>
+                                                        <input class="form-control form-control-sm qty_input" type="number" name="quantity" value="{{ item.quantity }" min="1" max="99"
+                                                            data-item_id="{{ item.item_id }}" id="id_qty_{{ item.item_id }}">
+                                                        <div class="input-group-append">
+                                                            <button class="btn-sm increment-qty btn btn-dark rounded-0" data-item_id="{{ item.item_id }}"
+                                                                id="increment-qty_{{ item.item_id }}">
+                                                                <span></span>
+                                                                    <i class="fa-sm fas fa-plus"></i>
+                                                                </span>
+                                                            </button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </form>
+                                            <a href="" class="update-link text-info"><small>Update</small></a>
+                                            <a href="" class="remove-item text-danger float-right" id="remove_{{ item.item_id }}" data-size="{{ item.size }}"><small>Remove</small> </a>
                                         </td>
                                         <td class="py-3">
                                             <p class="my-0">${{ item.product.price }}</p>
@@ -68,13 +94,13 @@
                                 </tr>
                                 <tr>
                                     <td colspan="5" class="text-right">
-                                        <a href="{% url 'products' %}" class="btn btn-light rounded text-uppercase mt-3 border border-danger">
+                                        <a href="{% url 'products' %}" class="btn btn-light rounded text-uppercase mt-3 border border-dark">
                                             <span class="icon">
                                                 <i class="fas fa-chevron-left"></i>
                                             </span>
                                             <span class="text-uppercase">Keep Shopping</span>
                                         </a>
-                                        <a href="" class="btn btn-light rounded text-uppercase mt-3 border border-danger">
+                                        <a href="" class="btn btn-light rounded text-uppercase mt-3 border border-dark">
                                             <span class="text-uppercase">Checkout</span>
                                         </a>
                                     </td>
@@ -87,7 +113,7 @@
                         <h4 class="text-uppercase fw-bold font-weight-bold">Your Shopping Bag is empty :( </h4>
                         <p class="mb-4">It is time to shop add items to your shopping bag to purchase.</p>
                         <h4>
-                            <a href="{% url 'products' %}" class="shop-now-button shopping-btn rounded text-uppercase py-3 mt-2">Go Shopping</a>
+                            <a href="{% url 'products' %}" class="shop-now-button button rounded text-uppercase py-3 mt-2">Go Shopping</a>
                         </h4>
                         
                     </div>
@@ -96,4 +122,31 @@
         </div>
     </div>
 </div>
+{% endblock %}
+
+{% block postloadjs %}
+{{ block.super }}
+{% include 'products/includes/quantity_input_script.html' %}
+
+<script type="text/javascript">
+    // Update quantity onclick
+    $('.update-link').click(function(e) {
+        var form = $(this).prev('.update-form');
+        form.submit();
+    })
+
+    // Remove item and reload on click
+    $('.remove-item').click(function (e) {
+        var csrfToken = "{{ csrf_token }}";
+        var itemId = $(this).attr('id').split('remove_')[1];
+        var url = `/bag/remove/${itemId}`;
+        var data = { 'csrfmiddlewaretoken': csrfToken};
+
+        $.post(url, data)
+         .done(function () {
+            location.reload();
+        });
+    })
+
+</script>
 {% endblock %}
