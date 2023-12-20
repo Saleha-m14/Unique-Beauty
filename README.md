@@ -9,30 +9,21 @@ Unique Beauty Website is an imaginary website designed for selling cosmetics. I 
 [View the Github repository]()
 
 # **Table of Contents**
-
-
 - [**Unique Beauty**](#unique-beauty)
-- [Project Goals](#project-goals)
-- [User Stories](#user-stories)\
-- [Features](#features)
-- [Navbar](#navbar)
-- [Home](#home)
-- [Menu](#menu)
-- [Gallery](#gallery)
-- [Footer](#footer)
-- [Booking](#booking)
-- [Managebooking](#managebooking)
-- [Messages](#messages)
-- [Frameworks, Libraries \& Tools](#frameworks-libraries--tools)
-- [Testing](#testing)
-- [Deployment](#deployment)
-  - [Github Deployment](#github-deployment)
-  - [Deploying with heroku](#deploying-with-heroku)
-- [Languages](#languages)
-- [Code](#code)
-- [Text](#text)
-- [Media](#media)
-- [Acknowledgements](#acknowledgements)
+- [**Table of Contents**](#table-of-contents)
+  - [Unique Beauty](#unique-beauty-1)
+  - [Project Goals](#project-goals)
+  - [User Stories](#user-stories)
+  - [Frameworks, Libraries \& Tools](#frameworks-libraries--tools)
+  - [Testing](#testing)
+  - [Deployment](#deployment)
+    - [Github Deployment](#github-deployment)
+    - [Deploying with heroku](#deploying-with-heroku)
+  - [Languages](#languages)
+  - [Code](#code)
+  - [Text](#text)
+  - [Media](#media)
+  - [Acknowledgements](#acknowledgements)
 
 ## Unique Beauty
     
@@ -71,6 +62,31 @@ Unique Beauty Website is an imaginary website designed for selling cosmetics. I 
   - As a shopper, I want the site to havve the input field for the quantity of a product to specify how many of it I want to buy.
   - As a shopper, I want each product to have the Shop Now and View buttons so that they can be added to the bag or the product detail is viewed.
 
+
+- ### Features
+
+  - #### Navbar
+
+    The navbar is fixed on the top of the page. It contains several links. 
+    -  It has a Unique Beauty logo. O the desktop view it is on the left side and is linked to the home page. 
+    -  In the middle of the page the search input filed is added to search for products. 
+    -  On the right side of the page the account dropdown exists and when it is clicked it opens dropdowns menu according to user authentication. If the user is authentiacated and superuser it opens the product management link, my profile, and logout. If the user is only authenticated and not a superuser the my profile and logout will open otherweise it will open link to register and login forms.
+    -  On the right side of the page and next to the account the shopping bag is positioned. It is linked to the shopping_bag.html file that all the bag items are added to it. It also displays the total cost of all the bag items.
+
+  - #### Home Page
+  
+    The homepage has a background image that is in the center of the page and on the page a short text(If you want to look unique use Unique Beauty products.) is written. On the bottom of the text the shop now button exists that is linked to the products page. Once it is clicked it will open the list of all available products.
+
+  - #### Products Page
+
+    When the shop now button is clicked it will open the list of all available products. 
+    -  On the top of the products page the page header with the text of Unique Beauty Products is added.
+    - In this page all the products are listed that each product is in a seperate card.
+    - Each product 
+
+  - #### Product Details Page
+  - #### Shopping Bag
+
 ## Frameworks, Libraries & Tools
 
 - [**Heroku**](https://dashboard.heroku.com/apps) is used for deploying this project
@@ -108,46 +124,45 @@ Unique Beauty Website is an imaginary website designed for selling cosmetics. I 
 
 ### Github Deployment
 
-    -  Login to your github account and navigate to your repositories and click on New.
-    -  Select a template(the Code Institute full template is used for this project).[Code-Institute-Org/python-essentials-template](https://github.com/Code-Institute-Org/p3-template)
-    -  Write a name for your repository
-    -  Select public
-    -  Click on create to create your repository.
-    -  Copy the link of your repository
-    -  log in to your cloudinary using github
-    -  click on crete new workspace and paste the github url.
-    -  Run the commands first "git add .", then "git commit -m "commit message" and finally "git push" to push the files to github.
+  -  Login to your github account and navigate to your repositories and click on New.
+  -  Select a template(the Code Institute full template is used for this project).[Code-Institute-Org/     python-essentials-template](https://github.com/Code-Institute-Org/p3-template)
+  -  Write a name for your repository
+  -  Select public
+  -  Click on create to create your repository.
+  -  Copy the link of your repository
+  -  log in to your cloudinary using github
+  -  click on crete new workspace and paste the github url.
+  -  Run the commands first "git add .", then "git commit -m "commit message" and finally "git push" to push the files to github.
 
 ### Deploying with heroku
 
-This project is deployed using [Heroku](https://id.heroku.com/) and following the instruction of deployment video of Course Institue. These are the deployment steps:
+  This project is deployed using [Heroku](https://id.heroku.com/) and following the instruction of deployment video of Course Institue. These are the deployment steps:
 
-    1. Open Heroku and click on "Create New App".
-    2. Write your app name and select region. You should give your app a unique name.
-    3. On the new page click on "settings" and select Config Var and add the below keys:
-        -  key: PORT & value 8000
-        -  Add key: DATABASE_URL, this should have been created automatically by Heroku.
-        -  Add key: CLOUDINARY_URL and the value as your cloudinary API Environment variable e.g.
-        -  Add key: SECRET_KEY and the value as a complex string which will be used to provide    cryptographic signing.
-
-    4. Click on "Deploy" tab.
-    5. Select "Github" as deployment method.
-    6. Search for your repository name and click connect.
-    7. Make sure that "main" branch is selected and click on "Enable Automatic Deploys" then, click on "Deploy Branch".
-    8.  When your project is deployed you can open it simply by clicking "View".
+  1. Open Heroku and click on "Create New App".
+  2. Write your app name and select region. You should give your app a unique name.
+  3. On the new page click on "settings" and select Config Var and add the below keys:
+    -  key: PORT & value 8000
+    -  Add key: DATABASE_URL, this should have been created automatically by Heroku.
+    -  Add key: CLOUDINARY_URL and the value as your cloudinary API Environment variable e.g.
+    -  Add key: SECRET_KEY and the value as a complex string which will be used to provide    cryptographic signing.
+  4. Click on "Deploy" tab.
+  5. Select "Github" as deployment method.
+  6. Search for your repository name and click connect.
+  7. Make sure that "main" branch is selected and click on "Enable Automatic Deploys" then, click on "Deploy Branch".
+  8.  When your project is deployed you can open it simply by clicking "View".
 
 ## Languages
 
-    -  Python
-    -  JavaScript
-    -  HTML5
-    -  CSS3
+  -  Python
+  -  JavaScript
+  -  HTML5
+  -  CSS3
 
 ## Code
 
-    - [Django Documenation](https://docs.djangoproject.com/en/4.2/) was used to provide examples of code solutions and Django functionality.
-    - [Bootstrap Documenation](https://getbootstrap.com/docs/4.1/getting-started/introduction/) was used to provide examples of Bootstrap functionality and building blocks.
-    - Code Institute walkthrough as inspiration and code examples, the code institute walkthrough "Boutique Ado" is used.The overall idea of this project is comming from "Boutique Ado" project.
+  - [Django Documenation](https://docs.djangoproject.com/en/4.2/) was used to provide examples of code solutions and Django functionality.
+  - [Bootstrap Documenation](https://getbootstrap.com/docs/4.1/getting-started/introduction/) was used to provide examples of Bootstrap functionality and building blocks.
+  - Code Institute walkthrough as inspiration and code examples, the code institute walkthrough "Boutique Ado" is used.The overall idea of this project is comming from "Boutique Ado" project.
 
 ## Text
 
