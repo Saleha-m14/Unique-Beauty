@@ -7,20 +7,69 @@ Unique Beauty Website is an imaginary website designed for selling cosmetics. I 
 [View the live project here!]()
 
 [View the Github repository]()
+
 # **Table of Contents**
 
+
 - [**Unique Beauty**](#unique-beauty)
-- [**Table of Contents**](#table-of-contents)
-  - [Frameworks, Libraries \& Tools](#frameworks-libraries--tools)
-  - [Testing](#testing)
-  - [Deployment](#deployment)
-    - [Github Deployment](#github-deployment)
-    - [Deploying with heroku](#deploying-with-heroku)
-  - [Languages](#languages)
-  - [Code](#code)
-  - [Text](#text)
-  - [Media](#media)
-  - [Acknowledgements](#acknowledgements)
+- [Project Goals](#project-goals)
+- [User Stories](#user-stories)\
+- [Features](#features)
+- [Navbar](#navbar)
+- [Home](#home)
+- [Menu](#menu)
+- [Gallery](#gallery)
+- [Footer](#footer)
+- [Booking](#booking)
+- [Managebooking](#managebooking)
+- [Messages](#messages)
+- [Frameworks, Libraries \& Tools](#frameworks-libraries--tools)
+- [Testing](#testing)
+- [Deployment](#deployment)
+  - [Github Deployment](#github-deployment)
+  - [Deploying with heroku](#deploying-with-heroku)
+- [Languages](#languages)
+- [Code](#code)
+- [Text](#text)
+- [Media](#media)
+- [Acknowledgements](#acknowledgements)
+
+## Unique Beauty
+    
+    Unique Beauty is an online shopping app that is created for cosmetics. Some people do not have enough time for shopping. This is the best way to save time and buy and order beauty products such as lipstick, suncream, eyeshadow... from anywhere and anytime.
+
+## Project Goals
+
+    The main purpose is to create an eccommerce application for Unique Beauty to sell their products using it.
+    When the shopper opens this website can easily click on the SHOP NOW button to view the products or search for a spcific product that they are looking for.
+
+## User Stories
+
+  - ### Administrator
+    - As a website admin, I can log in to admin panel using the super user.
+    - As a website admin, I can view the products and categories so that I can make changes to them.
+    - As an Admin, I want each product to have the Shop Now and View buttons so that they can be added to the bag or the product detail is viewed.
+
+  - ### First Time User
+    - As a first time user, I want to view the website homepage and find information about Unique Beauty.
+    - As a first time user, I want to see different categories of products to see what kind of products are available.
+    - As a first time user, I want to see a search input field to find easily something that I am looking for.
+    - As a first time user, I want to see a button that can be clicked to see all the products.
+    - As a first time user, I want to see product name, image and price.
+    - As a first time user, I want to be able to select the quantity of an item that I want to buy.
+    - As a first time user, I want to see all the details and informations of a specific product by clicking on it.
+    - As a first time user, I want the website to have a navbar with the links of different pages and categories so that I can navigate between the pages easily.
+    - As a first time user, I want to the webpage to have the signup form so that I can register for an account.
+    - As a site user, I want to receive a confirmation email after registering so that I can verify that my account registration was successful.
+  
+- ### Frequent User
+  - As a returning user, I want to be able to login using my username and password to see my account information.
+  - As a returning user, I want to have a personalized user profile so that I can view my personal order history and order confirmations, and save my payment information.
+  - As a site user, I want to easily log in or log out so that I can easily access my personal account information..
+  - As a shopper, I want to have a shopping bag to add the products to it so I can see all the products and the total price I want to buy.
+  - As a shopper, when I view a product I want to see the add to bag button so that I can click on it and add the product to the bag.
+  - As a shopper, I want the site to havve the input field for the quantity of a product to specify how many of it I want to buy.
+  - As a shopper, I want each product to have the Shop Now and View buttons so that they can be added to the bag or the product detail is viewed.
 
 ## Frameworks, Libraries & Tools
 
