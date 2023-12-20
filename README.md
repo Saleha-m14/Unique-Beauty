@@ -82,10 +82,28 @@ Unique Beauty Website is an imaginary website designed for selling cosmetics. I 
     When the shop now button is clicked it will open the list of all available products. 
     -  On the top of the products page the page header with the text of Unique Beauty Products is added.
     - In this page all the products are listed that each product is in a seperate card.
-    - Each product 
+    - The product image is added on the top and the product name is written as the card title. The product rating, price and also the shop now and view buttons are in the card footer.
+    - The quantity input is not displayed because it takes too much of the space.
+    - If the shoper wants to buy a product can easily click on the shop now button. Since the quantity value is one as default so one item will be added to the bag.
+    - If the shopper needs more details of the product can easily click on the view or the product image to open the product details page.
 
   - #### Product Details Page
+  
+    - When the user clicks on a product image or view button the product details page will open.
+    - The page title is on the top
+    - The product details contains all the details of a such as product image, name, price, rating, description, quantity input, keep shopping and add to bug buttons.
+    - The user can open the image on a new page by clicking on it.
+    - The user can select the number of item to be purchased.
+    - The keep shopping button will bring the shopper back to the all products page if the user wantedd to buy more products and the add to bag button will add the product with its quantity to the shopping back.
+  
   - #### Shopping Bag
+    
+    - If any item doesn't exist in the shopping bag a text is inserted that tells you that there is not any product in the bag and a shop now button will be there to take you to the prodcuts page.
+    - If item in the shopping bag exists it will display each item details in a single row.
+    - Each row will have five columns. In the first column will be the product image and in the second on the product name and sku. In the third column will be product price, the product quantity input will be in the fourth column and in the last column will be the subtotal.
+    - In the bottom of the page and on the desktop view on the right corner of the page the total cost of all products, delivery cost, grand total and keep shopping and checkout buttons are added.
+  
+
 
 ## Frameworks, Libraries & Tools
 
@@ -99,6 +117,7 @@ Unique Beauty Website is an imaginary website designed for selling cosmetics. I 
 - [**Psycopg2**](https://pypi.org/project/psycopg2/2.9.3/) to connect Postgre SQL
 - [**Bootstrap**](https://getbootstrap.com/) used for the frontend
 - [**allauth**](https://docs.allauth.org/en/latest/release-notes/recent.html)
+- [*Free Logo Maker Looka**](https://looka.com/editor/163700118) is used to create the Unique Beauty logo
 - [**Am I responsive**](https://ui.dev/amiresponsive) is used to check if the website is responsive to different devices.
 - [**Github issues & Kennan Board**](https://github.com/users/Saleha-m14/projects/3/views/1) is used to track the progress of the project.
 
