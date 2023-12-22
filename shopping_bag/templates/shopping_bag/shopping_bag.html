@@ -14,6 +14,15 @@
 <div class="container">
     <div id="shopping-bag">
         <div class="row">
+            {% if messages %}
+            <ul class="messages">
+                {% for message in messages %}
+                <li{% if message.tags %} class="{{ message.tags }}" {% endif %}>{{ message }}</li>
+                    {% endfor %}
+            </ul>
+            {% endif %}
+        </div>
+        <div class="row">
             <div class="col text-center mt-3">
                 <h2 class="logo-font">Shopping Bag Items</h2>
                 <hr class="w-50 mb-1">
@@ -72,8 +81,9 @@
                                                     </div>
                                                 </div>
                                             </form>
-                                            <a href="" class="update-link text-info"><small>Update</small></a>
-                                            <a href="" class="remove-item text-danger float-right" id="remove_{{ item.item_id }}" data-size="{{ item.size }}"><small>Remove</small> </a>
+                                            <a href="#" class="update-link text-info"><small>Update</small></a>
+                                            <a href="#" class="remove-item text-danger float-right" data-item-id="{{ item.item_id }}" id="remove_{{ item.item_id }}" data-size="{{ item.size }}"><small>Remove</small> </a>
+                                            
                                         </td>
                                         <td class="py-3">
                                             <p class="my-0">${{ item.product.price }}</p>
@@ -131,25 +141,28 @@
 <script type="text/javascript">
     // Update quantity onclick
     $('.update-link').click(function(e) {
-        var form = $(this).prev('.update-form');
-        console.log(form);
+        e.preventDefault(); // prevent default anchor behavior
+        var form = $(this).closest('tr').find('.update-form');
         console.log(form);
         form.submit();
     })
+    
 
     // Remove item and reload on click
-
-    $('.remove-item').click(function(e) {
+    $('.remove-item').click(function (e) {
+        e.preventDefault();
         var csrfToken = "{{ csrf_token }}";
-        var itemId = $(this).attr('id').split('remove_')[1];
-        var url = `/shopping_bag/remove/${itemId}`;
-        var data = { 'csrfmiddlewaretoken': csrfToken};
+        var itemId = $(this).data('item-id');
+        console.log('itemId', itemId);
+        var url = `{% url 'remove_from_shopping_bag' 'item_id' %}`.replace('item_id', itemId);
+
+        var data = { 'csrfmiddlewaretoken': csrfToken };
 
         $.post(url, data)
-         .done(function() {
+         .done(function () {
             location.reload();
         });
-    })
+    });
 
 </script>
 {% endblock %}
