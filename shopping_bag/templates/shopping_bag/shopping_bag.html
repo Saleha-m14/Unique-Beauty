@@ -11,17 +11,9 @@
 
 {% block content %}
 <div class="overlay"></div>
+
 <div class="container">
     <div id="shopping-bag">
-        <div class="row">
-            {% if messages %}
-            <ul class="messages">
-                {% for message in messages %}
-                <li{% if message.tags %} class="{{ message.tags }}" {% endif %}>{{ message }}</li>
-                    {% endfor %}
-            </ul>
-            {% endif %}
-        </div>
         <div class="row">
             <div class="col text-center mt-3">
                 <h2 class="logo-font">Shopping Bag Items</h2>

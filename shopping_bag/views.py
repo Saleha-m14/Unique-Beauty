@@ -52,15 +52,17 @@ def remove_from_shopping_bag(request, item_id):
     This view is for removing an item from shopping bag.
     """
     try:
-        product = Product.objects.get(pk=item_id)
+        # product = Product.objects.get(pk=item_id)
         shopping_bag = request.session.get('shopping_bag', {})
 
         shopping_bag.pop(item_id)
-        messages.success(request, f'You removed {product.name} from your shopping bag item list.')
+        # messages.success(request, f'You removed {product.name} from your shopping bag item list.')
+        messages.success(request, f'The item is removed successfully from your shopping bag')
 
         request.session['shopping_bag'] = shopping_bag
         return HttpResponse(status=200)
 
     except Exception as e:
         messages.error(request, f'Error while removing item: {e}')
+        print('error', error)
         return HttpResponse(status=500)
