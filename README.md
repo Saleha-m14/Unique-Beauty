@@ -61,6 +61,12 @@ Unique Beauty Website is an imaginary website designed for selling cosmetics. I 
   - As a shopper, when I view a product I want to see the add to bag button so that I can click on it and add the product to the bag.
   - As a shopper, I want the site to havve the input field for the quantity of a product to specify how many of it I want to buy.
   - As a shopper, I want each product to have the Shop Now and View buttons so that they can be added to the bag or the product detail is viewed.
+  - As a shopper, I want to select the quantity of the product when purchasing it to ensure that I do not select the wrong quantity of the product I want to buy.
+  - As a shopper, I want to view the items that I have already added to my shopping bag so that I can identify all the items that I have added and the total cost of them.
+  - As a shopper, I want to be able to update the quantity of an item in the bag so that I can have the ability to make changes to the product before checkout.
+  - As a shopper, I want to have the ability to remove an item that is added to the shopping bag so that I can remove something that is unintentionally added to the bag before checkout.
+  - As a shopper, I want to have the ability to easily enter my payment information so that I can check out the items that are in the shopping bag.
+  - As a shopper, I want to feel safe when entering my personal and payment information so that I can provide the needed information to check out an item.
 
 
 - ### Features
