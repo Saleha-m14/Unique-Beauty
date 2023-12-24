@@ -207,6 +207,11 @@ img {
 .toast-capper {
     height: 2px;
 }
+.toast-img {
+    max-width: 100%;
+    height: fit-content;
+    width: fit-content;
+}
 
 /* -------------------------------- Media Queries */
 
