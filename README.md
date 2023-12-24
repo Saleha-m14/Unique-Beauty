@@ -27,12 +27,13 @@ Unique Beauty Website is an imaginary website designed for selling cosmetics. I 
 
 ## Unique Beauty
     
-    Unique Beauty is an online shopping app that is created for cosmetics. Some people do not have enough time for shopping. This is the best way to save time and buy and order beauty products such as lipstick, suncream, eyeshadow... from anywhere and anytime.
+Unique Beauty is an online shopping app that is created for cosmetics. Some people do not have enough time for shopping. This is the best way to save time and buy and order beauty products such as lipstick, suncream, eyeshadow... from anywhere and anytime.
 
 ## Project Goals
 
-    The main purpose is to create an eccommerce application for Unique Beauty to sell their products using it.
-    When the shopper opens this website can easily click on the SHOP NOW button to view the products or search for a spcific product that they are looking for.
+The main purpose is to create an eccommerce application for Unique Beauty to sell their products using it.
+When the shopper opens this website can easily click on the SHOP NOW button to view the products or search for a spcific product that they are looking for. And the secure payment method for the user 
+to purchase a product.
 
 ## User Stories
 
@@ -108,6 +109,19 @@ Unique Beauty Website is an imaginary website designed for selling cosmetics. I 
     - If item in the shopping bag exists it will display each item details in a single row.
     - Each row will have five columns. In the first column will be the product image and in the second on the product name and sku. In the third column will be product price, the product quantity input will be in the fourth column and in the last column will be the subtotal.
     - In the bottom of the page and on the desktop view on the right corner of the page the total cost of all products, delivery cost, grand total and keep shopping and checkout buttons are added.
+
+  - #### Checkout 
+    - Once a user is happy to proceed to paying for the items, they are brough to the secure checkout page.
+    - They are asked to enter details including name, email, address and billing information
+    - Registered users have the option to save details for next purchase if they wish
+  
+  - #### Profile 
+    - Registered users are given a profile page which displays their personal information and order history
+  
+  - #### Admin
+    - The Admin section provides access to superusers to modify many aspects of the website
+    - They have access to the Product pages to add or edit products
+    - New product categories can be added or modified
   
 
 
