@@ -61,21 +61,6 @@
     
     <body class="mt-5">
         <header class="container-fluid fixed-top bg-white">
-            <div class="row">
-                <div class="col-md-8 offset-md-2">
-                    {% if messages %}
-                        {% for message in messages %}
-                            <div class="alert alert-{{ message.tags }}">
-                                {{ message }}
-                                <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-                                    <span aria-hidden="true">&times;</span>
-                                </button>
-                            </div>
-                        {% endfor %}
-                    {% endif %}
-                </div>
-            </div>
-            
             <div class="row d-none d-lg-flex">
                 <div class="col-12 col-lg-4 py-1 py-1g-0 text-center text-lg-left text-uppercase">
                     <a href="{% url 'home' %}" class="nav-link main-logo">
@@ -157,7 +142,21 @@
         </header>
         
         {% if messages %}
-        <div class="message-container"></div>
+        <div class="message-container">
+            {% for message in messages %}
+                {% with message.level as level %}
+                    {% if level == 40 %}
+                        {% include 'includes/toasts/toast_error.html' %}
+                    {% elif level == 30 %}
+                        {% include 'includes/toasts/toast_warning.html' %}
+                    {% elif level == 25 %}
+                        {% include 'includes/toasts/toast_success.html' %}
+                    {% else %}
+                        {% include 'includes/toasts/toast_info.html' %}
+                    {% endif %}
+                {% endwith %}
+            {% endfor %}
+        </div>
         {% endif %}
         
         {% block page_header %}
@@ -167,6 +166,9 @@
         {% endblock %}
         
         {% block postloadjs %}
+        <script type="text/javascript">
+            $('.toast').toast('show');
+        </script>
         {% endblock %}
 
         

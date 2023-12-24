@@ -1,6 +1,7 @@
 html {
     height: 100%;
 }
+
 body {
     background: url('/media/main_image.jpg')fixed center center no-repeat;
     font-family: sans-serif;
@@ -8,6 +9,7 @@ body {
     height: calc(100vh - 164px);
     background-size: cover;
 }
+
 /* from Bulma */
 .icon {
     align-items: center;
@@ -16,22 +18,29 @@ body {
     height: 1.5rem;
     width: 1.5rem;
 }
+
 .text-black {
-    color: rgb(10, 10, 10);;
+    color: rgb(10, 10, 10);
+    ;
 }
+
 .border-black {
     border: 2px solid black;
 }
+
 .main-logo {
     width: fit-content;
 }
+
 .margin-top {
     margin-top: 5px;
 }
+
 .short-text {
     color: #4c6592;
     font-family: 'Playfair Display', serif;
 }
+
 .searchbar {
     display: inline-flex;
     align-items: center;
@@ -40,19 +49,23 @@ body {
     border: 1px solid black;
     background-image: linear-gradient(40deg, #111, #a23148);
 }
+
 .searchbar :is(input, button) {
     background: transparent;
     color: inherit;
     border: none;
     outline: none;
 }
+
 .searchbar:focus-within input {
     width: 200px;
 }
+
 ::placeholder {
     font: inherit;
     color: #e3e3e3;
 }
+
 .search-btn {
     display: grid;
     place-items: center;
@@ -61,13 +74,16 @@ body {
     cursor: pointer;
     transition: color 0.25s;
 }
+
 .search-btn:hover {
     color: #e3e3e3;
 }
+
 .search-input {
     width: 0;
     transition: width 0.5s;
 }
+
 .button {
     font-family: Arial, sans-serif;
     font-size: 18px;
@@ -81,6 +97,7 @@ body {
     transition: background-color 0.3s ease;
     min-width: 300px;
 }
+
 .shopping-btn {
     font-family: Arial, sans-serif;
     font-size: 12px;
@@ -93,12 +110,14 @@ body {
     cursor: pointer;
     transition: background-color 0.3s ease;
 }
+
 .button:hover,
 .button:active,
 .button:focus {
     background-color: #f3edf2;
     text-decoration: none;
 }
+
 .shopping-btn:hover,
 .shopping-btn:active,
 .shopping-btn:focus {
@@ -115,6 +134,7 @@ body {
     z-index: -1;
     background: white;
 }
+
 img {
     height: 300px;
 }
@@ -123,44 +143,71 @@ img {
     background-color: transparent;
     border: none;
 }
+
 .custom-bg {
     height: 300px;
     background: #f1f1f1;
 }
+
 .custom-btn {
     margin-right: 10px;
 }
+
 /* delivery-banner */
 #delivery-banner {
     background: #a23148;
     color: white;
     font-weight: 400;
 }
+
 /* shopping bag */
 .empty-bag-container {
     margin: 30px 0 20px;
     background-color: rgb(247, 238, 226)
 }
+
 .font-weight-bold {
     font-weight: 700;
 }
+
 .empty-bag-container {
     padding: 20px;
     text-align: center;
-    
+
 }
+
 .bag-img {
     height: 200px;
     width: 180px;
     max-width: 100%;
-    
+
 }
+
 .unique-logo {
     background: url(/media/looka-unique.png)fixed center center no-repeat;
 }
+
 .unique-border {
     border: #a23148 1px solid;
 }
+
+/* ------------------------------- bootstrap toasts */
+
+.message-container {
+    position: fixed;
+    top: 72px;
+    right: 15px;
+    z-index: 99999999999;
+}
+
+.custom-toast {
+    overflow: visible;
+}
+
+.toast-capper {
+    height: 2px;
+}
+
 /* -------------------------------- Media Queries */
 
 /* Slightly larger container on xl screens */
