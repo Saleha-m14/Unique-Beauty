@@ -41,6 +41,13 @@
                 <div class="product-details-container my-5">
                     <h4 class="card-title text-uppercase">{{ product.name }}</h4>
                     <h4 class="custom-highlight">{{ product.price }}$</h4>
+                    {% if product.category %}
+                    <p class="small mt-1 mb-0">
+                        <a class="text-muted" href="{% url 'products' %}?category={{ product.category.name }}">
+                            <i class="fas fa-tag mr-1"></i>{{ product.category.friendly_name }}
+                        </a>
+                    </p>
+                    {% endif %}
                     {% if product.rating %}
                         <small class="text-muted"><i class="fas fa-star mr-1"></i>{{ product.rating }}</small>
                     {% else %}

@@ -47,6 +47,13 @@
                         <div class="card-footer custom-footer">
                             <div class="float-start">
                                 <h4 class="custom-highlight">${{ product.price }}</h4>
+                                {% if product.category %}
+                                <p class="small mt-1 mb-0">
+                                    <a class="text-muted" href="{% url 'products' %}?category={{ product.category.name }}">
+                                        <i class="fas fa-tag mr-1"></i>{{ product.category.friendly_name }}
+                                    </a>
+                                </p>
+                                {% endif %}
                                 {% if product.rating %}
                                 <small class="text-muted"><i class="fas fa-star mr-1"></i>{{ product.rating }}</small>
                                 {% else %}
@@ -81,49 +88,4 @@
         </div>
     </div>
 </div>
-<!--
-<div class="container-fluid">
-    <div class="row">
-        <div class="product-container col-10 offset-1">
-            <div class="row mt-1 mb-2"></div>
-            <div class="row">
-                <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3">
-                    <div class="card h-100 border-0">
-                        <img src="../../../media/pexels-kristina-paukshtite-3060257.jpg" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">Lip Stick</h5>
-                            <p class="card-text">Look shinny</p>
-                            <p>26.99$</p>
-                        </div>
-                    </div>
-                    <div class="card h-100 border-0">
-                        <img src="../../../media/pexels-kristina-paukshtite-3060257.jpg" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">Lip Stick</h5>
-                            <p class="card-text">Look shinny</p>
-                            <p>26.99$</p>
-                        </div>
-                    </div>
-                    <div class="card h-100 border-0">
-                        <img src="../../../media/pexels-kristina-paukshtite-3060257.jpg" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">Lip Stick</h5>
-                            <p class="card-text">Look shinny</p>
-                            <p>26.99$</p>
-                        </div>
-                    </div>
-                    <div class="card h-100 border-0">
-                        <img src="../../../media/pexels-kristina-paukshtite-3060257.jpg" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">Lip Stick</h5>
-                            <p class="card-text">Look shinny</p>
-                            <p>26.99$</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>   
-</div>
--->
 {% endblock %}
