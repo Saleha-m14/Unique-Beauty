@@ -30,7 +30,7 @@ def checkout(request):
     order_form = OrderForm()
 
     if not stripe_public_key:
-        messages.warning(request, '')
+        messages.warning(request, 'Stripe Public key is missing. Did you forget to set it?')
     template = 'checkout/checkout.html'
     context = {
         'order_form': order_form,
