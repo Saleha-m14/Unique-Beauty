@@ -40,7 +40,9 @@ to purchase a product.
   - ### Administrator
     - As a website admin, I can log in to admin panel using the super user.
     - As a website admin, I can view the products and categories so that I can make changes to them.
-    - As an Admin, I want each product to have the Shop Now and View buttons so that they can be added to the bag or the product detail is viewed.
+    - As an Admin, I want each product to have the Shop Now and View buttons so that they can be added to the bag or the product detail is view.
+    - As an admin, I want the user to have the ability to add reviews to a product so that I can read the user's reviews.
+    - As an admin, I want the website to have a contact form that the user can fill in to contact with site admin.
 
   - ### First Time User
     - As a first time user, I want to view the website homepage and find information about Unique Beauty.
@@ -60,6 +62,8 @@ to purchase a product.
   - As a site user, I want to easily log in or log out so that I can easily access my personal account information..
   - As a shopper, I want to have a shopping bag to add the products to it so I can see all the products and the total price I want to buy.
   - As a shopper, when I view a product I want to see the add to bag button so that I can click on it and add the product to the bag.
+  - As a site user, I want the user to have the ability to add reviews to a product so that the admin can read the user's reviews.
+  - As a site user, I want the website to have a contact form that the user can fill in to contact with manager of the shop.
   - As a shopper, I want the site to havve the input field for the quantity of a product to specify how many of it I want to buy.
   - As a shopper, I want each product to have the Shop Now and View buttons so that they can be added to the bag or the product detail is viewed.
   - As a shopper, I want to select the quantity of the product when purchasing it to ensure that I do not select the wrong quantity of the product I want to buy.
