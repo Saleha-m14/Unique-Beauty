@@ -22,10 +22,10 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/4.2/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'django-insecure-zd@!aj)y$_$^%8leo+u9-)c$%_eq1#72z58o!(b4bdsz+vey)q'
+SECRET_KEY = os.environ.get('SECRET_KEY', '')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = 'DEVELOPMENT' in os.environ
 
 ALLOWED_HOSTS = ['unique-beauty-p5-092d291f63b2.herokuapp.com', '8000-saleha-m14-unique-beauty-f2hhkrtqo4.us2.codeanyapp.com']
 CSRF_TRUSTED_ORIGINS = ['https://8000-saleha-m14-unique-beauty-ps6qmq3mgv.us2.codeanyapp.com']
