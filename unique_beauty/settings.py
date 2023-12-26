@@ -27,7 +27,7 @@ SECRET_KEY = 'django-insecure-zd@!aj)y$_$^%8leo+u9-)c$%_eq1#72z58o!(b4bdsz+vey)q
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['unique-beauty-p5.herokuapp.com', '8000-saleha-m14-unique-beauty-f2hhkrtqo4.us2.codeanyapp.com']
+ALLOWED_HOSTS = ['unique-beauty-p5-092d291f63b2.herokuapp.com', '8000-saleha-m14-unique-beauty-f2hhkrtqo4.us2.codeanyapp.com']
 CSRF_TRUSTED_ORIGINS = ['https://8000-saleha-m14-unique-beauty-ps6qmq3mgv.us2.codeanyapp.com']
 
 # Application definition
