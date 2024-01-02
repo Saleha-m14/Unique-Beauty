@@ -34,4 +34,4 @@ urlpatterns = [
 
 
 handler404 = 'unique_beauty.views.handler404'
-handler500 = 'unique_beauty.views.handler500'
+#handler500 = 'unique_beauty.views.handler500'
