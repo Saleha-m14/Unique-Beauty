@@ -27,8 +27,7 @@ SECRET_KEY = os.environ.get('SECRET_KEY', '')
 
 
 # SECURITY WARNING: don't run with debug turned on in production!
-# DEBUG = 'DEVELOPMENT' in os.environ
-DEBUG = True
+DEBUG = 'DEVELOPMENT' in os.environ
 
 ALLOWED_HOSTS = ['unique-beauty-p5-092d291f63b2.herokuapp.com', '8000-saleha-m14-unique-beauty-f2hhkrtqo4.us2.codeanyapp.com']
 CSRF_TRUSTED_ORIGINS = ['https://8000-saleha-m14-unique-beauty-ps6qmq3mgv.us2.codeanyapp.com']
