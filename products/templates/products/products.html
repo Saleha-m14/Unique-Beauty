@@ -87,6 +87,18 @@
                                 {% endif %}
                                 {% if product.rating %}
                                 <small class="text-muted"><i class="fas fa-star mr-1"></i>{{ product.rating }}</small>
+                                <div class="rating">
+                                    <input type="radio" name="rating" id="star5" type="radio">
+                                    <label for="star5"></label>
+                                    <input type="radio" name="rating" id="star4" type="radio">
+                                    <label for="star4"></label>
+                                    <input type="radio" name="rating" id="star3" type="radio">
+                                    <label for="star3"></label>
+                                    <input type="radio" name="rating" id="star2" type="radio">
+                                    <label for="star2"></label>
+                                    <input type="radio" name="rating" id="star1" type="radio">
+                                    <label for="stars1"></label>
+                                </div>
                                 {% else %}
                                 <small class="text-muted">No rating</small>
                                 {% endif %}

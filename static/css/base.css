@@ -232,7 +232,18 @@ input[name='q']::placeholder {
 .unique-border {
     border: #a23148 1px solid;
 }
+/*Rating*/
+.rating label::before {
+    content: '\2605';
+    font-size: 10px;
 
+}
+.rating input:checked ∼ label,
+.rating label:hover,
+.rating label:hover ∼ label {
+    color: gold;
+    transition: color 0.3s;
+}
 /* ------------------------------- bootstrap toasts */
 
 .message-container {
