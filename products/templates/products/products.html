@@ -75,8 +75,6 @@
             
                     <div class="card-body">
                         <h5 class="card-title">{{ product.name }}</h5>
-                        <!--<p class="card-text">{{ product.description }}</p>
-                                    </div>-->
                         <div class="card-footer custom-footer">
                             <div class="float-start">
                                 <h4 class="custom-highlight">${{ product.price }}</h4>
@@ -123,6 +121,26 @@
                     </div>
                 </div>
             </div>
+                {% if forloop.counter|divisibleby:1 %}
+                <div class="col-12 d-sm-none mb-5">
+                    <hr>
+                </div>
+                {% endif %}
+                {% if forloop.counter|divisibleby:2 %}
+                <div class="col-12 d-none d-sm-block d-md-block d-lg-none mb-5">
+                    <hr>
+                </div>
+                {% endif %}
+                {% if forloop.counter|divisibleby:3 %}
+                <div class="col-12 d-none d-lg-block d-xl-none mb-5">
+                    <hr>
+                </div>
+                {% endif %}
+                {% if forloop.counter|divisibleby:4 %}
+                <div class="col-12 d-none d-xl-block mb-5">
+                    <hr>
+                </div>
+                {% endif %}
             {% endfor %}
         </div>
     </div>
