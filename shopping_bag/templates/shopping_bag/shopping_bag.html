@@ -1,6 +1,7 @@
 {% extends "base.html" %}
 {% load static %}
 {% load bag_tools %}
+
 {% block page_header %}
 <div class="container header-container">
     <div class="row">
@@ -26,7 +27,7 @@
                     <div class="d-block d-md-none">
                         <div class="row">
                             <div class="col">
-                                {% include "shopping_bag/shopping_bag-total.html" %}
+                                {% include "shopping_bag/bag-total.html" %}
                             </div>
                         </div>
                         <div class="row">
@@ -71,7 +72,7 @@
                                 </tr>
                             </thead>
 
-                            {% for item in ahopping_bag_items %}
+                            {% for item in shopping_bag_items %}
                                 <tr>
                                     <td class="p-3 w-25">
                                         {% include "shopping_bag/product-image.html" %}
@@ -102,50 +103,7 @@
                             </tr>
                         </table>
                     </div>
-                    <!--
-                    <div class="shopping-bag-items">
-                        <div class="table-responsive">
-                            <table class="table table-sm">
-                                <thead class="text-black">
-                                    <tr>
-                                        <th scope="col">Product Info</th>
-                                        <th scope="col"></th>
-                                        <th scope="col">Price</th>
-                                        <th scope="col">Quantity</th>
-                                        <th scope="col">Subtotal</th>
-                                    </tr>
-                                </thead>
-                                {% for item in shopping_bag_items %}
-                                    <tr>
-                                        <td class="w-25 p-3">
-                                            {% include "shopping_bag/product.image.url" %}
-                                        </td>
-                                        <td class="py-3">
-                                            {% include "shopping_bag/product-info.html" %}                                        </td>
-                                        <td class="py-3">
-                                            <p class="my-0">${{ item.product.price }}</p>
-                                        </td>
-                                        <td class="py-3 w-25">
-                                            {% include "shopping_bag/quantity-form.html" %}
-                                        </td>
-                                        <td class="py-3">
-                                            <p class="my-0">${{ item.product.price }}</p>
-                                        </td>
-                                    </tr>
-                                {% endfor %}
-                                <tr>
-                                    <td colspan="5" class="pt-5 text-right">
-                                        {% include "shopping_bag/checkout-buttons.html" %}
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td colspan="5" class="text-right">
-                                        {% include 'shopping_bag/checkout-buttons.html'%}
-                                    </td>
-                                </tr>
-                            </table>
-                        </div>
-                    </div>-->
+                    
                 {% else %}
                     <div class="empty-bag-container">
                         <h4 class="text-uppercase fw-bold font-weight-bold">Your Shopping Bag is empty :( </h4>
