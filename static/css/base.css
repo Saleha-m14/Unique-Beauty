@@ -191,6 +191,9 @@ img {
 .custom-btn {
     margin-right: 10px;
 }
+.custom-img {
+    height: 200px;
+}
 input[name='q']::placeholder {
     color: #aab7c4;
 }

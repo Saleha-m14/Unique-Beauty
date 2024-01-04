@@ -64,12 +64,12 @@
                     {% if product.image %}
                     <a href="{% url 'product_detail' product.id %}">
 
-                        <img class="card-img-top w-100 custom-bg" src="{{ product.image.url }}" alt="{{ product.name }}">
+                        <img class="img-fluid card-img-top w-100 custom-bg custom-img" src="{{ product.image.url }}" alt="{{ product.name }}">
                     </a>
                     {% else %}
                     <a href="{% url 'product_detail' product.id %}">
 
-                        <img class="card-img-top w-100 custom-bg" src="{{ MEDIA_URL }}noimage.png" alt="{{ product.name }}">
+                        <img class="img-fluid card-img-top w-100 custom-bg custom-img" src="{{ MEDIA_URL }}noimage.png" alt="{{ product.name }}">
                     </a>
                     {% endif %}
             
