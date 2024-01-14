@@ -4,6 +4,7 @@ from products.models import Product
 
 # Create your views here.
 
+
 def shopping_bag(request):
     """
     This view will return the items that are in the shopping bag.
@@ -23,16 +24,14 @@ def add_to_shopping_bag(request, item_id):
     if item_id in list(shopping_bag.keys()):
         shopping_bag[item_id] += quantity
         messages.success(request, f'Updated {product.name} quantity to {shopping_bag[item_id]}')
-    else:    
+    else:
         shopping_bag[item_id] = quantity
         messages.success(request, f'Added {product.name} to your bag')
-    
     request.session['shopping_bag'] = shopping_bag
     return redirect(redirect_url)
 
 
 def adjust_shopping_bag(request, item_id):
-    
     """
     This view will ajdust the qunatity of the specified product
     to the specified amount
@@ -44,11 +43,9 @@ def adjust_shopping_bag(request, item_id):
     if quantity > 0:
         shopping_bag[item_id] = quantity
         messages.success(request, f'Updated {product.name} quantity to {shopping_bag[item_id]}')
-    else:    
+    else:
         shopping_bag.pop(item_id)
         messages.success(request, f'Removed {product.name} from your bag')
-
-    
     request.session['shopping_bag'] = shopping_bag
     return redirect(reverse('shopping_bag'))
 
