@@ -1,4 +1,5 @@
 from django.db import models
+STATUS = ((0, "Draft"), (1, "Published"))
 
 # Create your models here.
 class Post(models.Model):
@@ -8,6 +9,10 @@ class Post(models.Model):
     alt_tag = models.CharField(max_length=50, default='Blog image')
     created_on = models.DateTimeField(auto_now_add=True)
     last_modified = models.DateTimeField(auto_now=True)
+    status = models.IntegerField(choices=STATUS, default=0)
 
-def __str__(self):
-    return self.title
+    class Meta:
+        ordering = ('-created_on',)
+
+    def __str__(self):
+        return self.title
