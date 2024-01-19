@@ -1,8 +1,8 @@
 from django.shortcuts import render, get_object_or_404, redirect, reverse
 from django.db.models import Q
 from django.db.models.functions import Lower
-from .models import Product, Category
-from .forms import ProductForm
+from .models import Product, Category, Review
+from .forms import ProductForm, ReviewForm
 from django.contrib import messages
 from django.contrib.auth.decorators import login_required
 
@@ -62,8 +62,24 @@ def product_detail(request, product_id):
     This view will return all the details of a product on a seprate page(product_detail.html)
     """
     product = get_object_or_404(Product, pk=product_id)
+    reviews = Review.objects.filter(product=product)
+    reviewform = ReviewForm(request.POST)
+    if request.method == 'POST':
+        if reviewform.is_valid():
+            reviewform.instance.email = request.user.email
+            reviewform.instance.name = request.user.username
+            review = reviewform.save(commit=False)
+            review.product = product
+            reviewform.save()
+            messages.info(request, "Your review is added!")
+        else:
+            review_form = ReviewForm()
+            return redirect(reverse('product_detail', args=[product_id]))
     context = {
         'product': product,
+        'review': reviews,
+        'reviewed': False,
+        'review_form': ReviewForm()
     }
     return render(request, 'products/product_detail.html', context)
 
