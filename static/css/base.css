@@ -254,6 +254,9 @@ input[name='q']::placeholder {
     width: fit-content;
 }
 
+#blog-posts {
+    margin-top: 90px;
+}
 
 /* -------------------------------- Media Queries */
 
