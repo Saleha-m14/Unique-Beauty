@@ -5,6 +5,7 @@ STATUS = ((0, "Draft"), (1, "Published"))
 class Post(models.Model):
     title = models.CharField(max_length=200, unique=True)
     content = models.TextField(blank=False)
+    slug = models.SlugField(max_length = 250, null = True, blank = True)
     featured_image = models.ImageField('blog_image', default='placeholder')
     alt_tag = models.CharField(max_length=50, default='Blog image')
     created_on = models.DateTimeField(auto_now_add=True)
