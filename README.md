@@ -147,21 +147,58 @@ to purchase a product.
 
 ## Testing
 
-- ### Bugs
-  - #### Fixed Bugs
+The website is tested on different browsers and devices for the responsiveness and accessability.
 
+- ### Responsiveness Testing
+  The website was tested for responsiveness using the Chrome and Firefox browsers and their associated Developer Tools. It was also tested on a real mobile phone to look for display problems on the smaller screen.
+  
+  - #### Bugs
+    | Bug | Solution | Status |
+    | ---| ---| ---|
+    | Authentication Error at checkout stating that you did not provide an API key | Added the SECRET_KEY and the error is resolved | Fixed |
+    | Csrf verification failded at accounts login page | Added the csrf_token | Fixed |
+    | name context is not defined at order history | The context was not spelled correctly. | Fixed |
+    | The website styling was not working properly on the deployed site | Set the DEBUG to False and redeployed | Fixed |
+    | The payments was created on the stripe dashboard but there was not any payment succeeded | checked the files for any mistake and found the typing mistake on succeeded | Fixed |
+    | TypeError at accounts signup that was SMTP.starttls()got an unexpected keyword argument 'keyfile' | The problem was with python version so I created a runtime.txt file and added python-3.9.18 | Fixed |
+    | The create a bucket on the aws was not active | I descided to use cloudinary for hosting media files | Unfixed | 
+    | I was getting an error on the shopping bag page when I try to open it. On the deployed site Server Error (500) exists and when I run it locally I saw the error TemplateDoesNotExist at /shopping_bag/
+    shopping_bag/product.image.url | The typing mistake on the bag items for loop was fixed. | Fixed |
+    | The products were added to the site but they were lost I mean when I was viewing the products page there was 0 Products | I switched from the local database to Elephant SQL and added the products again. | Fixed |
+    
 
 - #### Remaining Bugs
 
   There is not any known bugs in my project.
 
 - ### Testing User Stories
-
-- ### First Time User
-      
+    All the user stories are tested.
+- ### Administration
+    | Title | User Story Detail | Expected Result | Result |
+    | ---| ---| ---| ---|
+    | Manage store Products | As a site admin I can create, read, upadate and delete products on the site | Admin can add and update product | As expected |
+    | Add Blog Posts | As a site admin I can create, read, upadate and delete posts on the site | Admin can add and update posts | As expected |
+    | Product Management | When I login as an admin I want to see the product management when clicking on account so that I can add a product in the store. | The superuser can click on the product management link | As expected |
+    | Edit and Delete links on each product for site admin | When I login as an admin I want to see the edit and delete link on each product in the product detail so that I can easily update or delete a product | The edit and delete buttons for superuser | As expected |
+    | View reviews | As a site admin I want to view the reviews on a product so that I can read the comments | Admin can view the product review | As expected |
+    | Approve reviews | As a site admin I want to approve the reviews on a product so that I can decide which reviews to dispaly on the site | Admin can approve the product review | Not as expected |
+    
+    
+- ### Registration 
+    | Title | User Story Detail | Expected Result | Result |
+    | ---| ---| ---| ---|
+    | Account Registration | As a site user I want to register for an account so that I can purchase products and save my information. | The site user can register for an account and save the info in the profile | As expected |
+    | Login | As a site user I can login to my account using username and password so that I can access my orders and see the previous orders | Previous orders are displayed in the profile page | As expected | 
+    | Logout | As a site user I can logout of my account so that I can keep my account save from other users | Users can logout and once logout of the account can not access the profile anymore | As expected |
+    
 - ### Frequent User
-
-- ### Returning User
+    | Title | User Story Detail | Expected Result | Result |
+    | ---| ---| ---| ---|
+    | Personalized Profile | As a site user I want to have a personalized user profile so that I can save my shopping details on it. | Users can save personal details on profile | As expected |
+    | Add reviews | As a site user I want to be able to add reviews on the products so that I can engage with other usrs | Registered users can submit a review on a product |  As expected | 
+    | Edit a review | As a site user I want to edit a review so that I can fix any typing mistakes | Users can edit the review | Not as expected |
+    | View previous orders details | As a site user I want to have the ability to view my previous orders sot tha I can see the order details | The user can see his or her previous order details | As expected |
+    | Checkout Bag Items | As a site user I want to have the ability to go to secure checkout so that I can complete my order | Users can checkout and purchase items | As expected |
 
 ## Deployment
 
