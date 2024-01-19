@@ -9,3 +9,15 @@ class PostList(generic.ListView):
     template_name = "blog/posts.html"
     paginate_by = 6
 
+
+def get(self, request, *args, **kwargs):
+        queryset = Post.objects.filter(status=1)
+        post = get_object_or_404(queryset)
+
+        return render(
+            request,
+            "blog/post_detail.html",
+            {
+                "post": post,
+            },
+        )
