@@ -13,7 +13,7 @@ body {
 #unique-img {
     height: 600px;
     width: 100%;
-    background: url('https://res.cloudinary.com/deeztln5e/image/upload/v1705742884/main_image_dppgd8.jpg') no-repeat center cover;
+    background: url('https://res.cloudinary.com/deeztln5e/image/upload/v1705742884/main_image_dppgd8.jpg');
     position: relative;
 }
 
