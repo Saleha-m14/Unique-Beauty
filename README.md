@@ -1,6 +1,6 @@
 # **Unique Beauty**
 
-![Main image](media/main_image.jpg)
+![Main image](media/readme-imgs/home.png)
 
 Unique Beauty Website is an imaginary website designed for selling cosmetics. I have worked on it as a student of [Code Institute](https://codeinstitute.net/) for my fifth portofolio project. This webpage is created using [Code Institute Full Template](https://github.com/Code-Institute-Org/ci-full-template).
 
@@ -83,7 +83,7 @@ The user stories are added to project as [issues in the Github](https://github.c
 
   - #### Home Page
   
-    ![home](images/readmeimg/navbar.png)
+    ![home](media/readme-imgs/home.png)
     The homepage has a background image that is in the center of the page and on the page a short text(If you want to look unique use Unique Beauty products.) is written. On the bottom of the text the shop now button exists that is linked to the products page. Once it is clicked it will open the list of all available products.
 
   - #### Register Page 

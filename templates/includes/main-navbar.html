@@ -1,46 +1,127 @@
 <div class="collapse navbar-collapse" id="main-nav">
-    <ul class="navbar-nav w-auto mx-auto">
-        <li class="nav-item d-block d-md-none">
-            <a class="logo-font font-weight-bold nav-link text-black mr-5" href="{% url 'home' %}" id="home-link">
-                Home
-            </a>
-        </li>
-        <li class="nav-item dropdown">
-            <a class="logo-font font-weight-bold nav-link text-black mr-5" href="#" id="all-products-link"
-                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                All Products
-            </a>
-            <div class="dropdown-menu border-0" aria-labelledby="all-products-link">
-                <a href="{% url 'products' %}?sort=price&direction=asc" class="dropdown-item">By Price</a>
-                <a href="{% url 'products' %}?sort=category&direction=asc" class="dropdown-item ">By Category</a>
-                <a href="{% url 'products' %}" class="dropdown-item">All Products</a>
-            </div>
-        </li>
-        <li class="nav-item dropdown">
-            <a class="logo-font font-weight-bold nav-link text-black mr-5" href="#" id="all-products-link"
-                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Makeup
-            </a>
-            <div class="dropdown-menu border-0" aria-labelledby="all-products-link">
-                <a href="{% url 'products' %}?category=Make-up" class="dropdown-item">Makeup</a>
-                <a href="{% url 'products' %}?category=lipstick" class="dropdown-item ">Lipstick</a>
-                <a href="{% url 'products' %}?category=eyeshadow" class="dropdown-item">Face Cream</a>
-                <a href="{% url 'products' %}?category=Cleansing-oil" class="dropdown-item">Cleansing Oil</a>
-                <a href="{% url 'products' %}?category=Make-up,lipstick,face-cream,Cleansing-oil" class="dropdown-item">All Makeup</a>
-            </div>
-        </li>
-        <li class="nav-item dropdown">
-            <a class="logo-font font-weight-bold nav-link text-black" href="#" id="specials-link" data-toggle="dropdown"
-                aria-haspopup="true" aria-expanded="false">
-                Special Offers
-            </a>
-            <div class="dropdown-menu border-0" aria-labelledby="specials-link">
-                <a href="{% url 'products' %}?category=new_arrivals" class="dropdown-item">New Arrivals</a>
-                <a href="{% url 'products' %}?category=deals" class="dropdown-item">Deals</a>
-                <a href="{% url 'products' %}?category=clearance" class="dropdown-item">Clearance</a>
-                <a href="{% url 'products' %}?category=new_arrivals,deals,clearance" class="dropdown-item">All Specials</a>
-            </div>
-        </li>
-
-    </ul>
+  <ul class="navbar-nav w-auto mx-auto">
+    <li class="nav-item dropdown">
+      <a
+        class="logo-font font-weight-bold nav-link text-black mr-5"
+        href="{% url 'home' %}"
+        id="home-link"
+        data-toggle="dropdown"
+        aria-haspopup="true"
+        aria-expanded="false"
+      >
+        Home
+      </a>
+      <div class="dropdown-menu border-0" aria-labelledby="blog-link">
+        <a href="{% url 'home' %}" class="dropdown-item">Home Page</a>
+      </div>
+      <div class="dropdown-menu border-0" aria-labelledby="contact-form">
+        <a href="{% url 'home' %}#contact-form" class="dropdown-item"
+          >Contact Us</a
+        >
+      </div>
+    </li>
+    <li class="nav-item dropdown">
+      <a
+        class="logo-font font-weight-bold nav-link text-black mr-5"
+        href="#"
+        id="all-products-link"
+        data-toggle="dropdown"
+        aria-haspopup="true"
+        aria-expanded="false"
+      >
+        All Products
+      </a>
+      <div class="dropdown-menu border-0" aria-labelledby="all-products-link">
+        <a
+          href="{% url 'products' %}?sort=price&direction=asc"
+          class="dropdown-item"
+          >By Price</a
+        >
+        <a
+          href="{% url 'products' %}?sort=category&direction=asc"
+          class="dropdown-item"
+          >By Category</a
+        >
+        <a href="{% url 'products' %}" class="dropdown-item">All Products</a>
+      </div>
+    </li>
+    <li class="nav-item dropdown">
+      <a
+        class="logo-font font-weight-bold nav-link text-black mr-5"
+        href="#"
+        id="all-products-link"
+        data-toggle="dropdown"
+        aria-haspopup="true"
+        aria-expanded="false"
+      >
+        Makeup
+      </a>
+      <div class="dropdown-menu border-0" aria-labelledby="all-products-link">
+        <a href="{% url 'products' %}?category=Make-up" class="dropdown-item"
+          >Makeup</a
+        >
+        <a href="{% url 'products' %}?category=lipstick" class="dropdown-item"
+          >Lipstick</a
+        >
+        <a href="{% url 'products' %}?category=eyeshadow" class="dropdown-item"
+          >Face Cream</a
+        >
+        <a
+          href="{% url 'products' %}?category=Cleansing-oil"
+          class="dropdown-item"
+          >Cleansing Oil</a
+        >
+        <a
+          href="{% url 'products' %}?category=Make-up,lipstick,face-cream,Cleansing-oil"
+          class="dropdown-item"
+          >All Makeup</a
+        >
+      </div>
+    </li>
+    <li class="nav-item dropdown">
+      <a
+        class="logo-font font-weight-bold nav-link text-black"
+        href="#"
+        id="specials-link"
+        data-toggle="dropdown"
+        aria-haspopup="true"
+        aria-expanded="false"
+      >
+        Special Offers
+      </a>
+      <div class="dropdown-menu border-0" aria-labelledby="specials-link">
+        <a
+          href="{% url 'products' %}?category=new_arrivals"
+          class="dropdown-item"
+          >New Arrivals</a
+        >
+        <a href="{% url 'products' %}?category=deals" class="dropdown-item"
+          >Deals</a
+        >
+        <a href="{% url 'products' %}?category=clearance" class="dropdown-item"
+          >Clearance</a
+        >
+        <a
+          href="{% url 'products' %}?category=new_arrivals,deals,clearance"
+          class="dropdown-item"
+          >All Specials</a
+        >
+      </div>
+    </li>
+    <li class="nav-item dropdown">
+      <a
+        class="logo-font font-weight-bold nav-link text-black mr-5"
+        href="{% url 'blog' %}"
+        id="blog-link"
+        data-toggle="dropdown"
+        aria-haspopup="true"
+        aria-expanded="false"
+      >
+        Blog
+      </a>
+      <div class="dropdown-menu border-0" aria-labelledby="blog-link">
+        <a href="{% url 'blog' %}" class="dropdown-item">Blog Posts</a>
+      </div>
+    </li>
+  </ul>
 </div>
