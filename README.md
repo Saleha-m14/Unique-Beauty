@@ -167,6 +167,7 @@ The user stories are added to project as [issues in the Github](https://github.c
 - [**Cloudinary**](https://cloudinary.com/)is used for media and static files.
 - [**Database-URL**](https://pypi.org/project/dj-database-url/0.5.0/)is used to represent database settings
 - [**Gunicorn**](https://pypi.org/project/gunicorn/20.1.0/) is used to run Django on heroku.
+- [**XML-sitemap**](https://www.xml-sitemaps.com/) is used to create the sitemap.xml file
 - [**Psycopg2**](https://pypi.org/project/psycopg2/2.9.3/) to connect Postgre SQL
 - [**Bootstrap**](https://getbootstrap.com/) used for the frontend
 - [**allauth**](https://docs.allauth.org/en/latest/release-notes/recent.html)
