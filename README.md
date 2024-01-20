@@ -276,7 +276,9 @@ I used the COdeanywhere to develop the website and the site is deployed using [H
 
   - [Django Documenation](https://docs.djangoproject.com/en/4.2/) was used to provide examples of code solutions and Django functionality.
   - [Bootstrap Documenation](https://getbootstrap.com/docs/4.1/getting-started/introduction/) was used to provide examples of Bootstrap functionality and building blocks.
-- The code comprises of code based on Code Institute walkthroughs "Boutique Ado" and "I think therefore I blog" that have been customised to meet the specific requiremnets of the project, alonside custom code and models written by me.
+  - The code comprises of code based on Code Institute walkthroughs "Boutique Ado" and "I think therefore I blog" that have been customised to meet the specific requiremnets of the project, alonside custom code and models written by me.
+  - The Youtube video that helped me with sending email using contact form
+    [send emails using django](https://www.youtube.com/watch?v=iGPPhzhXBFg&t=14s)
 
 ## Text
 

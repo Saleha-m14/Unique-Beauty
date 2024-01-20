@@ -18,6 +18,7 @@ def index(request):
             [email],  # reciever email
             fail_silently=False
         )
+        print(send_mail)
         form = ContactForm(request.POST)
         if form.is_valid():
             # Process the form data
