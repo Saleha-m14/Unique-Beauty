@@ -1,34 +1,27 @@
 # **Unique Beauty**
 
-![Main image]()
+![Main image](media/main_image.jpg)
 
 Unique Beauty Website is an imaginary website designed for selling cosmetics. I have worked on it as a student of [Code Institute](https://codeinstitute.net/) for my fifth portofolio project. This webpage is created using [Code Institute Full Template](https://github.com/Code-Institute-Org/ci-full-template).
 
-[View the live project here!]()
+[View the live project here!](https://unique-beauty-p5-092d291f63b2.herokuapp.com/)
 
-[View the Github repository]()
+[View the Github repository](https://github.com/Saleha-m14/Unique-Beauty/)
 
-# **Table of Contents**
+ **Table of Contents**
 - [**Unique Beauty**](#unique-beauty)
-- [**Table of Contents**](#table-of-contents)
-  - [Unique Beauty](#unique-beauty-1)
   - [Project Goals](#project-goals)
   - [User Stories](#user-stories)
   - [Frameworks, Libraries \& Tools](#frameworks-libraries--tools)
   - [Testing](#testing)
   - [Deployment](#deployment)
-    - [Github Deployment](#github-deployment)
+    - [Github Repository](#github-repository)
     - [Deploying with heroku](#deploying-with-heroku)
   - [Languages](#languages)
   - [Code](#code)
   - [Text](#text)
   - [Media](#media)
   - [Acknowledgements](#acknowledgements)
-
-## Unique Beauty
-    
-Unique Beauty is an online shopping app that is created for cosmetics. Some people do not have enough time for shopping. This is the best way to save time and buy and order beauty products such as lipstick, suncream, eyeshadow... from anywhere and anytime.
-
 ## Project Goals
 
 The main purpose is to create an eccommerce application for Unique Beauty to sell their products using it.
@@ -73,11 +66,15 @@ to purchase a product.
   - As a shopper, I want to have the ability to easily enter my payment information so that I can check out the items that are in the shopping bag.
   - As a shopper, I want to feel safe when entering my personal and payment information so that I can provide the needed information to check out an item.
 
+- ### Agile Methodology
+
+The user stories are added to project as [issues in the Github](https://github.com/Saleha-m14/Unique-Beauty/issues) and are prioritzed using lables. The [Kanban Board](https://github.com/users/Saleha-m14/projects/5) is used to implement Agile in this project. This way I have devided all tasks and managed to complete the project.
 
 - ### Features
 
   - #### Navbar
 
+    ![navbar](media/readme-imgs/navbar.png)
     The navbar is fixed on the top of the page. It contains several links. 
     -  It has a Unique Beauty logo. O the desktop view it is on the left side and is linked to the home page. 
     -  In the middle of the page the search input filed is added to search for products. 
@@ -86,10 +83,34 @@ to purchase a product.
 
   - #### Home Page
   
+    ![home](images/readmeimg/navbar.png)
     The homepage has a background image that is in the center of the page and on the page a short text(If you want to look unique use Unique Beauty products.) is written. On the bottom of the text the shop now button exists that is linked to the products page. Once it is clicked it will open the list of all available products.
 
-  - #### Products Page
+  - #### Register Page 
+  
+    ![register](media/readme-imgs/signup.png)
+    - This page allows users to signup to create a profile where their data can be stored for future purchases.
+    - This uses the allauth features for authorisation
 
+  - #### login Page 
+  
+    ![login](media/readme-imgs/signin.png)
+    This page will allow the user to login using username and password.
+    
+  - #### Contact Us 
+  
+    ![contact](media/readme-imgs/contact-form.png)
+    Users are able to send messages to the company via the Contact Us Form.
+    
+  - #### Blog Posts 
+  
+    ![blog](media/readme-imgs/posts.png)
+    Another feature of the website is the Blog section
+    This contains blog posts uploaded by Admin about the beauty products.
+    
+  - #### Products
+
+    ![products](media/readme-imgs/products.png)
     When the shop now button is clicked it will open the list of all available products. 
     -  On the top of the products page the page header with the text of Unique Beauty Products is added.
     - In this page all the products are listed that each product is in a seperate card.
@@ -100,6 +121,7 @@ to purchase a product.
 
   - #### Product Details Page
   
+    ![product-detail](media/readme-imgs/product-detail.png)
     - When the user clicks on a product image or view button the product details page will open.
     - The page title is on the top
     - The product details contains all the details of a such as product image, name, price, rating, description, quantity input, keep shopping and add to bug buttons.
@@ -109,20 +131,27 @@ to purchase a product.
   
   - #### Shopping Bag
     
+    ![bag](media/readme-imgs/bag.png)
     - If any item doesn't exist in the shopping bag a text is inserted that tells you that there is not any product in the bag and a shop now button will be there to take you to the prodcuts page.
     - If item in the shopping bag exists it will display each item details in a single row.
     - Each row will have five columns. In the first column will be the product image and in the second on the product name and sku. In the third column will be product price, the product quantity input will be in the fourth column and in the last column will be the subtotal.
     - In the bottom of the page and on the desktop view on the right corner of the page the total cost of all products, delivery cost, grand total and keep shopping and checkout buttons are added.
 
   - #### Checkout 
+  
+    ![checkout](media/readme-imgs/checkout.png)
     - Once a user is happy to proceed to paying for the items, they are brough to the secure checkout page.
     - They are asked to enter details including name, email, address and billing information
     - Registered users have the option to save details for next purchase if they wish
   
   - #### Profile 
+  
+    ![profile](media/readme-imgs/profile.png)
     - Registered users are given a profile page which displays their personal information and order history
   
   - #### Admin
+
+    ![product-management](media/readme-imgs/product-mng.png)
     - The Admin section provides access to superusers to modify many aspects of the website
     - They have access to the Product pages to add or edit products
     - New product categories can be added or modified
@@ -202,15 +231,18 @@ The website is tested on different browsers and devices for the responsiveness a
 
 ## Deployment
 
-### Github Deployment
+
+I used the COdeanywhere to develop the website and the site is deployed using [Heroku.](https://heroku.com/)
+
+### Github Repository 
 
   -  Login to your github account and navigate to your repositories and click on New.
-  -  Select a template(the Code Institute full template is used for this project).[Code-Institute-Org/     python-essentials-template](https://github.com/Code-Institute-Org/p3-template)
+  -  Select a template(the Code Institute full template is used for this project).[Code-Institute-Org/     python-essentials-template](https://github.com/Code-Institute-Org/ci-full-template)
   -  Write a name for your repository
   -  Select public
   -  Click on create to create your repository.
   -  Copy the link of your repository
-  -  log in to your cloudinary using github
+  -  log in to codeanywhere using github
   -  click on crete new workspace and paste the github url.
   -  Run the commands first "git add .", then "git commit -m "commit message" and finally "git push" to push the files to github.
 
@@ -229,7 +261,8 @@ The website is tested on different browsers and devices for the responsiveness a
   5. Select "Github" as deployment method.
   6. Search for your repository name and click connect.
   7. Make sure that "main" branch is selected and click on "Enable Automatic Deploys" then, click on "Deploy Branch".
-  8.  When your project is deployed you can open it simply by clicking "View".
+  8.  Ensure DEBUG = False when making the final deployment
+  9.  When your project is deployed you can open it simply by clicking "View".
 
 ## Languages
 
@@ -242,7 +275,7 @@ The website is tested on different browsers and devices for the responsiveness a
 
   - [Django Documenation](https://docs.djangoproject.com/en/4.2/) was used to provide examples of code solutions and Django functionality.
   - [Bootstrap Documenation](https://getbootstrap.com/docs/4.1/getting-started/introduction/) was used to provide examples of Bootstrap functionality and building blocks.
-  - Code Institute walkthrough as inspiration and code examples, the code institute walkthrough "Boutique Ado" is used.The overall idea of this project is comming from "Boutique Ado" project.
+- The code comprises of code based on Code Institute walkthroughs "Boutique Ado" and "I think therefore I blog" that have been customised to meet the specific requiremnets of the project, alonside custom code and models written by me.
 
 ## Text
 
