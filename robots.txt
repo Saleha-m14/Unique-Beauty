@@ -1,0 +1,4 @@
+User-agent: *
+Disallow: /accounts/
+Disallow: /shopping_bag/
+Sitemap: https://unique-beauty-p5-092d291f63b2.herokuapp.com/sitemap.xml
