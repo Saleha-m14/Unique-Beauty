@@ -15,7 +15,7 @@ def index(request):
             'Contact Form',  #title
             'Thanks for contacting us! We rescieved your message.',  #message
             'settings.EMAIL_HOST_USER', #sender if not available consider
-            [email],  # reciever email
+            ['atifamohammadi188@gmail.com'],  # reciever email
             fail_silently=False
         )
         form = ContactForm(request.POST)
