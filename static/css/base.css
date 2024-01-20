@@ -13,7 +13,7 @@ body {
 #unique-img {
     height: 600px;
     width: 100%;
-    background-image: url('/media/main_image.jpg') no-repeat center center;
+    background: url('/media/main_image.jpg') no-repeat center center;
     position: relative;
 }
 
