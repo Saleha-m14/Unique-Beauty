@@ -13,12 +13,11 @@ def index(request):
         email = request.POST['email']
         send_mail(
             'Contact Form',  #title
-            'message',  #message
+            'Thanks for contacting us! We rescieved your message.',  #message
             'settings.EMAIL_HOST_USER', #sender if not available consider
             [email],  # reciever email
             fail_silently=False
         )
-        print(send_mail)
         form = ContactForm(request.POST)
         if form.is_valid():
             # Process the form data
