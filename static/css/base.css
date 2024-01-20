@@ -3,17 +3,17 @@ html {
 }
 
 body {
-    /*background: url('/media/main_image.jpg')fixed center center no-repeat;*/
     font-family: sans-serif;
     color: rgb(10, 10, 10);
     height: calc(100vh - 164px);
     background-size: cover;
 }
+
 /* Unique main section */
 #unique-img {
     height: 600px;
     width: 100%;
-    background-image: url('/media/main_image.jpg') no-repeat center center/cover;
+    background-image: url('/media/main_image.jpg') no-repeat center center;
     position: relative;
 }
 
@@ -33,6 +33,7 @@ body {
 #cover-text>h3 {
     color: #ffffff;
 }
+
 .btt-button {
     height: 42px;
     width: 42px;
@@ -44,6 +45,7 @@ body {
 .btt-link {
     cursor: pointer;
 }
+
 a.category-badge>span.badge:hover {
     background: #212529 !important;
     color: #fff !important;
@@ -188,9 +190,11 @@ a.category-badge>span.badge:hover {
 .custom-btn {
     margin-right: 10px;
 }
+
 .custom-img {
     height: 200px;
 }
+
 input[name='q']::placeholder {
     color: #aab7c4;
 }
@@ -232,6 +236,7 @@ input[name='q']::placeholder {
 .unique-border {
     border: #a23148 1px solid;
 }
+
 /* ------------------------------- bootstrap toasts */
 
 .message-container {
@@ -248,6 +253,7 @@ input[name='q']::placeholder {
 .toast-capper {
     height: 2px;
 }
+
 .toast-img {
     max-width: 100%;
     height: fit-content;
@@ -324,10 +330,12 @@ input[name='q']::placeholder {
         font-size: .75rem;
     }
 
-    .increment-qty, .decrement-qty {
+    .increment-qty,
+    .decrement-qty {
         padding: .25rem .5rem !important;
     }
 }
+
 /* Allauth form formatting */
 
 .allauth-form-inner-content p {
@@ -379,16 +387,19 @@ input[name='q']::placeholder {
     background-color: #222;
     border-color: #222;
 }
+
 .btn-black {
     background: black;
     color: white;
 }
+
 .btn-outline-black {
     background: white;
     color: black !important;
     /* use important to override link colors for <a> elements */
     border: 1px solid black;
 }
+
 .allauth-form-inner-content a {
     color: #17a2b8;
     /* text-info */
