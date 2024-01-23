@@ -155,7 +155,64 @@ The user stories are added to project as [issues in the Github](https://github.c
     - The Admin section provides access to superusers to modify many aspects of the website
     - They have access to the Product pages to add or edit products
     - New product categories can be added or modified
+
+  - #### Facebook page
   
+        Creating a Facebook Business Page can be an important step in your business's social media marketing strategy. It allows your business to have a public presence on Facebook, providing a space for you to share updates, post about products or services, engage with customers, and reach new audiences.
+
+        Here's a step-by-step guide on how to create a Facebook Business Page:
+
+        1. Log in to Facebook:
+
+        If you don't already have a personal Facebook account, you'll need to create one first. Facebook requires every business page to be linked to a personal account for admin purposes.
+
+        2. Create a Page:
+
+        Once you're logged in, go to the "Pages" section in the main menu (on the left side of your home page). Click on "Create New Page".
+
+        3. Choose a Page Type:
+
+        You'll be asked to choose a category for your page. The most common choice is "Business or Brand". Click on "Get Started" under your chosen category.
+
+        4. Fill Out Information:
+
+        Now, you'll need to provide some information about your business, including:
+
+        - Page Name: This will be the name of your Business Page on Facebook. It should match or closely align with the name of your business.
+        Category: Type a word or two that describes your business, and Facebook will suggest some options. Choose the one that fits your business best.
+        - Description: Write a short description of your business (up to 255 characters). This should be a brief outline of what your business does.
+        - Website (optional): If you have a business website, you can include it here.
+
+        1. Add a Profile Picture and Cover Photo:
+
+        Add a profile picture for your Business Page. This is often your company logo. Then, add a cover photo. This is a larger, banner-style photo that appears at the top of your page. It should relate to your business in some way and be engaging.
+
+        2. Add More Details:
+
+        After creating your page, fill in additional details in the "About" section, such as:
+
+        - Contact information: Include phone numbers, email addresses, your website, etc.
+        - Location: If you have a physical store or office, put your address here.
+        - Hours: If applicable, fill in the hours of operation.
+        - Price range: This can give potential customers an idea of your pricing structure.
+
+        Create Your First Post:
+
+        Now your page is set up, it's a good time to create your first post. This can be a simple welcome message, an introduction of your business, or anything else that you feel would be appropriate for your new Facebook audience.
+
+        1. Invite People to Like Your Page:
+
+        Facebook will prompt you to invite people to like your new Business Page. Start with your personal Facebook friends who are likely to be interested in your business, and then expand from there.
+
+        Remember, Facebook is often the first place a customer goes to get information about a business, so having all your information up to date and easy to find is very important. Once your page is set up, you can start posting updates, sharing content, and interacting with your customers!
+    <details>
+    <summary>View images</summary>
+
+    [Link to the facebook page](https://www.facebook.com/profile.php?id=61554772517942)
+    ![Facebook buisness page](media/readme-imgs/facebook.png)
+    ![facebook page](media/readme-imgs/facebook%20page.png)
+    ![facebook posts](media/readme-imgs/post%20on%20facebook.png)
+    </details>
 
 
 ## Frameworks, Libraries & Tools
@@ -195,6 +252,8 @@ The website is tested on different browsers and devices for the responsiveness a
     | I was getting an error on the shopping bag page when I try to open it. On the deployed site Server Error (500) exists and when I run it locally I saw the error TemplateDoesNotExist at /shopping_bag/
     shopping_bag/product.image.url | The typing mistake on the bag items for loop was fixed. | Fixed |
     | The products were added to the site but they were lost I mean when I was viewing the products page there was 0 Products | I switched from the local database to Elephant SQL and added the products again. | Fixed |
+    | Failed to load resource: The server responded with a status of 404 error was on the console | The server was trying to load that home.css file that was inside the home but it was empty and the link to it was added to index.html file. I removed the link to that file and deleted the static folder because it was empty and all the home page stylings are inside base.css file. | Fixed |
+    | Failed to load resource: The server responded with /favicon.ico:1 a status of 500(Internal Server error) | I noticed that the fav icon src was not defined properly and the fav icon was not on the cloudinary images library so I uploaded the image on cloudinary and added the image full url. | Fixed |
     
 
 - #### Remaining Bugs
