@@ -12,10 +12,10 @@ def index(request):
         subject= request.POST['subject']
         email = request.POST['email']
         send_mail(
-            'Contact Form',  #title
-            'Thanks for contacting us! We rescieved your message.',  #message
+            'Unique Beauty Contact Form',  #title
+            f'Hello {name}, thanks for contacting us!\nWe rescieved your message that is:\n\n{message}\n\nPlease note that your message will be reviewed.\n\nCheck out the new perfum and hair products that are added to the store.\nLink - https://unique-beauty-p5-092d291f63b2.herokuapp.com/products/\n\n',  #message
             'settings.EMAIL_HOST_USER', #sender if not available consider
-            ['atifamohammadi188@gmail.com'],  # reciever email
+            [email],  # reciever email
             fail_silently=False
         )
         form = ContactForm(request.POST)
