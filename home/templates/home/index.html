@@ -59,7 +59,8 @@
         <h2 class="my-0 text-black">Subscribe for <strong>Newsletter</strong></h2>
       </div>
       <div class="col-md-12">
-        <form method="POST" action="">
+        <form method="POST" action="{% url 'home' %}">
+          {% csrf_token %}
           <div class="row">
             <div class="col-md-4 mb-6">
               <input type="text" class="form-control" placeholder="Your Name">

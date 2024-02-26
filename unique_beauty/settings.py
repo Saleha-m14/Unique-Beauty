@@ -30,7 +30,7 @@ SECRET_KEY = os.environ.get('SECRET_KEY', '')
 # DEBUG = 'DEVELOPMENT' in os.environ
 DEBUG = True
 ALLOWED_HOSTS = ['unique-beauty-p5-092d291f63b2.herokuapp.com', '8000-saleham14-uniquebeauty-brftr5w48nr.ws-eu108.gitpod.io']
-CSRF_TRUSTED_ORIGINS = ['https://8000-saleha-m14-unique-beauty-ps6qmq3mgv.us2.codeanyapp.com']
+CSRF_TRUSTED_ORIGINS = ['https://8000-saleha-m14-unique-beauty-ps6qmq3mgv.us2.codeanyapp.com', '8000-saleham14-uniquebeauty-brftr5w48nr.ws-eu108.gitpod.io']
 
 # Application definition
 

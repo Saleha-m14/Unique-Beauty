@@ -30,3 +30,7 @@ def index(request):
         'form': form
     }
     return render(request, 'home/index.html', context)
+
+def subscribe(request):
+    if request.method == 'POST':
+        return redirect("/")
