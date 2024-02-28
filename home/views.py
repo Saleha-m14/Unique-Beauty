@@ -3,6 +3,7 @@ from .forms import ContactForm
 from django.contrib import messages
 from django.core.mail import send_mail
 from django.conf import settings
+from .models import NewsletterSubscribers
 # Create your views here.
 
 def index(request):
@@ -33,4 +34,9 @@ def index(request):
 
 def subscribe(request):
     if request.method == 'POST':
-        return redirect("/")
+        name = request.POST.get('name', None)
+        email = request.POST.get('email', None)
+
+        if not name or not email:
+            messages.error(request, "In order to subscribe for newsletter name and email is required!")
+            return redirect("/")
