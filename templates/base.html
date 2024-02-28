@@ -45,6 +45,10 @@
                 crossorigin="anonymous"></script>
             <!-- Stripe -->
             <script src="https://js.stripe.com/v3/"></script>
+            <!--tinymce-->
+            <script type="text/javascript" src="#{request.contextPath}/resources/tiny_mce/tiny_mce.js"></script>
+            <script type="text/javascript" src="#{request.contextPath}/resources/js/tinymce_init.js"></script>
+            <h:inputTextarea rows="5" cols="80" styleClass="tinymce" value="#{cc.attrs.value}"/>
     
         {% endblock %}
 
@@ -66,7 +70,7 @@
                         <div class="input-group w-100">
                             <input type="text" name="q" class="form-control border border-black rounded-0 search-input" placeholder="Search here">
                             <div class="input-group-append">
-                                <button class="form-control rounded-0 search-btn" type="submit">
+                                <button class="form-control rounded-0 search-btn" type="submit" aria-label="Search">
                                     <span class="icon">
                                         <i class="fas fa-search"></i>
                                     </span>

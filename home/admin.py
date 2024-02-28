@@ -1,5 +1,14 @@
 from django.contrib import admin
 
-# Register your models here.
-from .models import Contact
-admin.site.register(Contact)
+from .models import Contact, NewsletterSubscribers
+
+class ContactAdmin(admin.ModelAdmin):
+    list_display = ('name', 'email', 'subject', 'message')
+
+
+class NewsletterSubscribersAdmin(admin.ModelAdmin):
+    list_display = ('name', 'email', 'subscribed_on')
+
+admin.site.register(Contact, ContactAdmin)
+admin.site.register(NewsletterSubscribers, NewsletterSubscribersAdmin)
+
