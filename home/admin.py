@@ -1,14 +1,9 @@
 from django.contrib import admin
 
-from .models import Contact, NewsletterSubscribers
+from .models import Contact
 
 class ContactAdmin(admin.ModelAdmin):
     list_display = ('name', 'email', 'subject', 'message')
 
-
-class NewsletterSubscribersAdmin(admin.ModelAdmin):
-    list_display = ('name', 'email', 'subscribed_on')
-
 admin.site.register(Contact, ContactAdmin)
-admin.site.register(NewsletterSubscribers, NewsletterSubscribersAdmin)
 

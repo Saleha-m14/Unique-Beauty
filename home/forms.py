@@ -7,7 +7,3 @@ class ContactForm(forms.ModelForm):
         fields = '__all__'
 
 
-class NewsletterForm(forms.Form):
-    subject = forms.CharField()
-    recievers = forms.CharField()
-    message = forms.CharField(label="Email content")

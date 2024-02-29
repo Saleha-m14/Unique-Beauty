@@ -34,9 +34,10 @@
 <div class="container" id="contact-form">
   <div class="row">
     <div class="col-lg-8 col-md-10 mx-auto">
-      <h1 class="text-center">Contact Us</h1>
+      <h1 class="text-center">Contact & Newsletter
+      </h1>
       <p>
-        Want to get in touch? Fill out the form below to send me a message and I
+        Want to get in touch? Fill out the form below to send me a message and get a news letter and I
         will get back to you as soon as possible!
       </p>
       <form method="POST" name="form" class="" action="{% url 'home' %}">
@@ -51,47 +52,4 @@
     </div>
   </div>
 </div>
-<!--Footer-->
-<div class="subscribe bg-light">
-  <div class="container">
-    <div class="row align-items-center justify-content-center py-3">
-      <div class="col-md-12 mb-4 py-1 py-1g-0 text-center text-lg-left">
-        <h2 class="my-0 text-black">Subscribe for <strong>Newsletter</strong></h2>
-      </div>
-      <div class="col-md-12">
-        <form method="POST" action="{% url 'home' %}">
-          {% csrf_token %}
-          <div class="row">
-            <div class="col-md-4 mb-6">
-              <input type="text" class="form-control" placeholder="Your Name">
-            </div>
-            <div class="col-md-4 mb-6">
-              <input type="email" class="form-control" placeholder="Your Email">
-            </div>
-            <div class="col-md-4 mb-6">
-              <button class="btn btn-dark w-100">Subscribe</button>
-            </div>
-          </div>
-        </form>
-      </div>
-    </div>
-  </div>
-</div>
-<footer id="footer">
-  <div class="container">
-    <h3>Unique Beauty</h3>
-    <p>You can find unique products in our shop.</p>
-    <div class="social-links">
-      <a href="https://www.facebook.com/profile.php?id=61554772517942" target="_blank" class="facebook" title="Follow us on Facebook" aria-label="Follow Unique page on Facebook"><i class="fa fa-facebook"></i></a>
-      <a href="#" class="instagram" target="_blank"  title="Follow us on instagram" aria-label="Follow Unique page on instagram"><i class="fa fa-instagram"></i></a>
-      <a href="#" class="linkedin" target="_blank" title="Follow us on linkedin" aria-label="Follow Unique page on linkedin"><i class="fa fa-linkedin"></i></a>
-    </div>
-    <div class="copyright">
-      &copy; Copyright <strong><span>Unique</span></strong
-      >. All Rights Reserved
-    </div>
-  </div>
-</footer>
-
-
 {% endblock %}
