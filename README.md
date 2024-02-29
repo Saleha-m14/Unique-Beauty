@@ -1,6 +1,6 @@
 # **Unique Beauty**
 
-![Main image](media/readme-imgs/home.png)
+![Main image](media/readme-imgs/responsiveness%20image.png)
 
 Unique Beauty Website is an imaginary website designed for selling cosmetics. I have worked on it as a student of [Code Institute](https://codeinstitute.net/) for my fifth portofolio project. This webpage is created using [Code Institute Full Template](https://github.com/Code-Institute-Org/ci-full-template).
 
@@ -158,53 +158,53 @@ The user stories are added to project as [issues in the Github](https://github.c
 
   - #### Facebook page
   
-        Creating a Facebook Business Page can be an important step in your business's social media marketing strategy. It allows your business to have a public presence on Facebook, providing a space for you to share updates, post about products or services, engage with customers, and reach new audiences.
+    Creating a Facebook Business Page can be an important step in your business's social media marketing strategy. It allows your business to have a public presence on Facebook, providing a space for you to share updates, post about products or services, engage with customers, and reach new audiences.
 
-        Here's a step-by-step guide on how to create a Facebook Business Page:
+    Here's a step-by-step guide on how to create a Facebook Business Page:
 
-        1. Log in to Facebook:
+    1. Log in to Facebook:
 
-        If you don't already have a personal Facebook account, you'll need to create one first. Facebook requires every business page to be linked to a personal account for admin purposes.
+    If you don't already have a personal Facebook account, you'll need to create one first. Facebook requires every business page to be linked to a personal account for admin purposes.
 
-        2. Create a Page:
+    2. Create a Page:
 
-        Once you're logged in, go to the "Pages" section in the main menu (on the left side of your home page). Click on "Create New Page".
+    Once you're logged in, go to the "Pages" section in the main menu (on the left side of your home page). Click on "Create New Page".
 
-        3. Choose a Page Type:
+    3. Choose a Page Type:
 
-        You'll be asked to choose a category for your page. The most common choice is "Business or Brand". Click on "Get Started" under your chosen category.
+    You'll be asked to choose a category for your page. The most common choice is "Business or Brand". Click on "Get Started" under your chosen category.
 
-        4. Fill Out Information:
+    4. Fill Out Information:
 
-        Now, you'll need to provide some information about your business, including:
+    Now, you'll need to provide some information about your business, including:
 
-        - Page Name: This will be the name of your Business Page on Facebook. It should match or closely align with the name of your business.
-        Category: Type a word or two that describes your business, and Facebook will suggest some options. Choose the one that fits your business best.
-        - Description: Write a short description of your business (up to 255 characters). This should be a brief outline of what your business does.
-        - Website (optional): If you have a business website, you can include it here.
+    - Page Name: This will be the name of your Business Page on Facebook. It should match or closely align with the name of your business.
+    Category: Type a word or two that describes your business, and Facebook will suggest some options. Choose the one that fits your business best.
+    - Description: Write a short description of your business (up to 255 characters). This should be a brief outline of what your business does.
+    - Website (optional): If you have a business website, you can include it here.
 
-        1. Add a Profile Picture and Cover Photo:
+    1. Add a Profile Picture and Cover Photo:
 
-        Add a profile picture for your Business Page. This is often your company logo. Then, add a cover photo. This is a larger, banner-style photo that appears at the top of your page. It should relate to your business in some way and be engaging.
+    Add a profile picture for your Business Page. This is often your company logo. Then, add a cover photo. This is a larger, banner-style photo that appears at the top of your page. It should relate to your business in some way and be engaging.
 
-        2. Add More Details:
+    2. Add More Details:
 
-        After creating your page, fill in additional details in the "About" section, such as:
+    After creating your page, fill in additional details in the "About" section, such as:
 
-        - Contact information: Include phone numbers, email addresses, your website, etc.
-        - Location: If you have a physical store or office, put your address here.
-        - Hours: If applicable, fill in the hours of operation.
-        - Price range: This can give potential customers an idea of your pricing structure.
+    - Contact information: Include phone numbers, email addresses, your website, etc.
+    - Location: If you have a physical store or office, put your address here.
+    - Hours: If applicable, fill in the hours of operation.
+    - Price range: This can give potential customers an idea of your pricing structure.
 
-        Create Your First Post:
+    Create Your First Post:
 
-        Now your page is set up, it's a good time to create your first post. This can be a simple welcome message, an introduction of your business, or anything else that you feel would be appropriate for your new Facebook audience.
+    Now your page is set up, it's a good time to create your first post. This can be a simple welcome message, an introduction of your business, or anything else that you feel would be appropriate for your new Facebook audience.
 
-        1. Invite People to Like Your Page:
+    1. Invite People to Like Your Page:
 
-        Facebook will prompt you to invite people to like your new Business Page. Start with your personal Facebook friends who are likely to be interested in your business, and then expand from there.
+    Facebook will prompt you to invite people to like your new Business Page. Start with your personal Facebook friends who are likely to be interested in your business, and then expand from there.
 
-        Remember, Facebook is often the first place a customer goes to get information about a business, so having all your information up to date and easy to find is very important. Once your page is set up, you can start posting updates, sharing content, and interacting with your customers!
+    Remember, Facebook is often the first place a customer goes to get information about a business, so having all your information up to date and easy to find is very important. Once your page is set up, you can start posting updates, sharing content, and interacting with your customers!
     <details>
     <summary>View images</summary>
 
@@ -235,6 +235,10 @@ The user stories are added to project as [issues in the Github](https://github.c
 ## Testing
 
 The website is tested on different browsers and devices for the responsiveness and accessability.
+
+- ### Lighthouse testing
+
+  ![Lighthouse](media/readme-imgs/lighthouse.png)
 
 - ### Responsiveness Testing
   The website was tested for responsiveness using the Chrome and Firefox browsers and their associated Developer Tools. It was also tested on a real mobile phone to look for display problems on the smaller screen.
@@ -341,13 +345,13 @@ I used the COdeanywhere to develop the website and the site is deployed using [H
 
 ## Text
 
-   The texts are written by author.
+The texts are written by author.
 
 ## Media
 
-    The images comes from [Pixels](https://www.pexels.com/)
+The images comes from [Pixels](https://www.pexels.com/)
 
 ## Acknowledgements
 
-    I am thankful of tutor support team at Code Institute for their help and guidance with issues that I faced during working on this project.
-    My Code Institute Mentor for feedback and suggestions.
+I am thankful of tutor support team at Code Institute for their help and guidance with issues that I faced during working on this project.
+My Code Institute Mentor for feedback and suggestions.

@@ -86,6 +86,7 @@ a.category-badge>span.badge:hover {
     font-family: 'Playfair Display', serif;
     padding-left: 2px;
     margin-left: 2px;
+    padding-top: 50px;
 }
 
 .searchbar {
