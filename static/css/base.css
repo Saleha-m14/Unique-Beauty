@@ -68,6 +68,9 @@ a.category-badge>span.badge:hover {
     color: rgb(10, 10, 10);
     ;
 }
+li > a {
+    color: #000;
+}
 
 .border-black {
     border: 2px solid black;
